@@ -1,0 +1,3 @@
+/* global.css */
+body, html { height: 100%; display: grid; background-color: black; }
+img { margin: auto; }
