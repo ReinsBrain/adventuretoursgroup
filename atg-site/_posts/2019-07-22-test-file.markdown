@@ -1,0 +1,10 @@
+---
+layout: package
+title: "This is a test"
+date: 2019-07-22 15:37:17 -0500
+categories: packages
+permalink: /:title
+thingamagigy: "help"
+---
+
+### Some Content
