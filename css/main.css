@@ -19,6 +19,14 @@ body, html {
 	height: 100vh;
 }
 
+@media only screen and (max-device-width: 600px) {
+  .first {
+    background: url('https://res.cloudinary.com/dlia7phdx/image/upload/v1564520783/ATG/atg-mp-big-tall.jpg');
+	background-size: cover;
+	background-position: center;
+  }
+}
+
 .gradient {
 	position: absolute;
 	bottom: 0;
@@ -173,7 +181,7 @@ footer {
 
 .icons {
 	display: grid;
-	grid-template-columns: 25% 25% 25% 25%;
+	grid-template-columns: 50% 50%;
 	grid-column-start: 4;
 	align-content: center;
 }
@@ -183,8 +191,5 @@ footer > p {
 	color: var(--font-light);
 }
 
-@media only screen and (max-width: 600px) {
-  body {
-    background-color: red;
-  }
+
 }
