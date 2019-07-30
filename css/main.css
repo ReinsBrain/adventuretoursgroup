@@ -1,0 +1,190 @@
+
+/* Body Section. */
+body, html {
+	margin: 0;
+	font-family: "Roboto"
+}
+
+/* First Section - Gradient, Big Package image,text and logo. */
+
+.logo {
+	position: relative;
+	padding: 15px;
+}
+
+.first {
+	position: relative;
+	background: url('https://res.cloudinary.com/dlia7phdx/image/upload/v1564095631/ATG/atg-mp-big.jpg');
+	background-size: cover;
+	height: 100vh;
+}
+
+.gradient {
+	position: absolute;
+	bottom: 0;
+	background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0,0.9) 40%);
+	width: 100%;
+	display:grid;
+}
+
+.gradient > div {
+	font-size: .8em;
+}
+
+.gradient button {
+	height: 6vh;
+	background-color: orange;
+	color: #000;
+	place-self: center;
+	margin-bottom: 10px;
+	border-radius: 6px;
+	outline: none;
+	border: 1px solid orange;
+	font-size: 22px;
+	padding: 0px 25px;
+	cursor: pointer;
+	transition: all .5s ease;
+}
+
+.gradient button:hover {
+	transition: all .5s ease;
+	color: orange;
+	border:  1px solid orange;
+	background-color: rgba(0, 0, 0, 0);
+}
+
+h1, h3 {
+	color: var(--font-light);
+	text-align: center;
+	font-weight: 300;
+}
+
+/* Second Section - Package Section and Read More. */
+
+.second {
+	background-color: ghostwhite;
+	display: grid;
+	grid-template-columns: 35% 35% 30%;
+	align-content: center;
+	padding-top: 8em;
+}
+
+.pack {
+	height: 300px;
+	width: auto;
+	margin: 0 10px 0 10px;
+	background-repeat: no-repeat !important;
+	background-size: contain !important;
+}
+
+.paracas {
+	background: url('https://res.cloudinary.com/dlia7phdx/image/upload/v1564342728/ATG/Paracas.jpg');
+}
+
+.machupicchu {
+	background: url('https://res.cloudinary.com/dlia7phdx/image/upload/v1564342728/ATG/Machu_Picchu.jpg');
+}
+
+.lima {
+	background: url('https://res.cloudinary.com/dlia7phdx/image/upload/v1564101948/ATG/Lima.png');
+}
+
+.text {
+	height: 5vh;
+	position: relative;
+	top: 300px;
+	text-align: center;
+	font-size: 1.3em;
+}
+
+.read-more {
+	align-self: center;
+	justify-self: right;
+	padding: 40px;
+	text-decoration: underline;
+	font-size: 150%;
+	color: var(--anchor-color);
+	grid-area: 2 / 3;
+}
+
+.text .read-more {
+	transition: .5s;
+}
+
+.text:hover {
+	text-decoration: underline;
+	cursor:pointer;
+}
+
+.read-more:hover{
+	text-decoration: underline;
+	cursor:pointer;
+}
+
+/* Third Section - Slider */
+
+.slider {
+	height: 60vh;
+	background-color: var(--slider-bg);
+}
+
+/* Forth (Spacing) Section - Just a few pixels between the Slider and the Comment section. */
+
+.sep {
+	height: 50%;
+	background-color: var(--darkgray);
+}
+
+/* Fifth Section - Comment section. */
+
+.comments {
+	height: 40vh;
+	background: url('https://res.cloudinary.com/dlia7phdx/image/upload/v1564095631/ATG/atg-mp-big.jpg');
+	background-size: cover;
+	background-position: center;
+	display: grid;
+	grid-template-columns: auto auto auto;
+	align-content: center;
+	text-align: -webkit-center;
+	color: var(--font-light);
+	font-weight: 300;
+	grid-column-gap: 20px;
+}
+
+.title {
+	grid-column-start: 1; 
+	grid-column-end: 4; 
+	grid-row-start: 1; 
+	grid-row-end: 3; 
+	height: 80px;
+	font-size: 200%;
+	text-decoration: underline;
+	font-weight: 300;
+}
+
+/* Footer - Icons for Ecofriendly, Trip Advisor and English/Spanish Language */
+
+footer {
+	height: 5vh;
+	display: grid;
+	background-color: var(--darkgray);
+	grid-template-columns: 25% 25% 25% 25%;
+}
+
+.icons {
+	display: grid;
+	grid-template-columns: 25% 25% 25% 25%;
+	grid-column-start: 4;
+	align-content: center;
+}
+
+footer > p {
+	text-align: center;
+	color: var(--font-light);
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: red;
+  }
+}
