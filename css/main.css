@@ -16,15 +16,8 @@ body, html {
 	position: relative;
 	background: url('https://res.cloudinary.com/dlia7phdx/image/upload/v1564095631/ATG/atg-mp-big.jpg');
 	background-size: cover;
+	background-position: center top;
 	height: 100vh;
-}
-
-@media only screen and (max-device-width: 600px) {
-  .first {
-    background: url('https://res.cloudinary.com/dlia7phdx/image/upload/v1564520783/ATG/atg-mp-big-tall.jpg');
-	background-size: cover;
-	background-position: center;
-  }
 }
 
 .gradient {
@@ -72,7 +65,7 @@ h1, h3 {
 .second {
 	background-color: ghostwhite;
 	display: grid;
-	grid-template-columns: 35% 35% 30%;
+	grid-template-columns: 33% 34% 33%;
 	align-content: center;
 	padding-top: 8em;
 }
@@ -82,19 +75,26 @@ h1, h3 {
 	width: auto;
 	margin: 0 10px 0 10px;
 	background-repeat: no-repeat !important;
-	background-size: contain !important;
+	background-size: cover !important;
+	border-radius: 3px;
 }
 
 .paracas {
 	background: url('https://res.cloudinary.com/dlia7phdx/image/upload/v1564342728/ATG/Paracas.jpg');
+	border: 1px solid black;
+	background-position: bottom center;
 }
 
 .machupicchu {
 	background: url('https://res.cloudinary.com/dlia7phdx/image/upload/v1564342728/ATG/Machu_Picchu.jpg');
+	border: 1px solid black;
+	background-position: center;
 }
 
 .lima {
 	background: url('https://res.cloudinary.com/dlia7phdx/image/upload/v1564101948/ATG/Lima.png');
+	border: 1px solid black;
+	background-position: bottom center;
 }
 
 .text {
@@ -134,8 +134,27 @@ h1, h3 {
 .slider {
 	height: 60vh;
 	background-color: var(--slider-bg);
+	display: grid;
+	color: white;
 }
 
+.slider > div {
+	border: 1px solid white;
+	grid-template-columns: 20% 20% 20% 20% 20%;
+	width: auto;
+	height: auto;
+	visibility: hidden;
+	display: none;
+}
+
+.slider > div.active {
+	visibility: visible;
+	display: block;
+	background: url('https://res.cloudinary.com/dlia7phdx/image/upload/v1564683039/ATG/Slider/slider1.jpg');
+	background-repeat: no-repeat;
+	background-size: contain;
+	
+}
 /* Forth (Spacing) Section - Just a few pixels between the Slider and the Comment section. */
 
 .sep {
