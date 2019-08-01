@@ -1,5 +1,24 @@
-@media only screen and (max-width: 800px) {
-	.second {
-		padding-left: 0 !important;
+@media only screen and (max-device-width: 600px) {
+  .first {
+    background: url('https://res.cloudinary.com/dlia7phdx/image/upload/v1564520783/ATG/atg-mp-big-tall.jpg');
+	background-size: cover;
+	background-position: center;
+  }
+  .second {
+  	grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: auto;
+    grid-gap: 50px;
 	}
+	 .read-more {
+  	grid-area: auto;
+  }
+  .pack {
+    height: 300px;
+    width: auto;
+    margin: 0 10px 0 10px;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    border-radius: 3px;
+    background-position: bottom center;
 }
+} 
