@@ -1,0 +1,56 @@
+[
+	{
+		"title": "Miraflores Spa R&R Package",
+		"tags": ["rest&relax"],
+		"include": {
+			"Day 1": [
+				"Airport pickup",
+				"Check-in at Marriott",
+				"Spa Monica Cabrera"
+			],
+			"Day 2": [
+				"Marriott buffet breakfast",
+				"Spa day at massage Wellbeing",
+				"Lunch at Trattoria Don Vito",
+				"Lift to airport or local hotel"
+			]
+		},
+		"Additional": [
+			"Honeymoon special",
+			"Personal butler option",
+			"Open Bar"
+		],
+		"Summary": " Relax in the most metropolitan and upscale place in Lima, Miraflores. This beautiful city overlooking the cliffs next to the sea, the “malecon”, boasts world class restaurants, attractions and nightlife. This Spa R&R package is perfect for someone arriving after a long flight or an arduous climb at higher elevations in Cuzco, or just someone in need of some pampering.",
+		"Description": "After your chofer picks you up in an SUV at the airport we bring to the Marriott to check you into your room. We let you unpack and relax for a few hours with a complimentary bottle of wine and fruits. We then bring you to Spa Monica Cabrera for a massage targeted at relaxing you and leaving you completely tranquil before bringing you back to the hotel for cocktails and a delicious dinner at La Vista restaurant. The next morning you will dine downstairs at the exquisite breakfast buffet before bringing brought to Massage Well being where you will be pampered for hours with massages, facials and aromatherapy with champagne. After your spa time is over we will continue the pampering with some exquisite comfort food at Trattoria Don Vito for some luxurious Italian food before then escorting you to the airport or local hotel "
+	},
+	{
+		"title": "Barranco Gastro Package",
+		"tags": ["rest&relax"],
+		"include": {
+			"Day 1": [
+				"Pick up from airport",
+				"Hotel drop off",
+				"Lunch at La Canta Rana",
+				"Tour of plaza and Grau",
+				"Dinner at Hotel B"
+			],
+			"Day 2": [
+				"Breakfast at la Panetteria",
+				"Tour with scooters",
+				"Lunch at Isolina",
+				"Water fountain",
+				"Dinner at El Hornero"
+			],
+			"Day 3": [
+				"Breakfast at Marriott",
+				"Airport drop off"
+			]
+		},
+		"Additional": [
+			"Party package, instead of the theatre and the water fountain we take you on a personal tour of some of the staple bars or clubs in the area, complimentary drink at each location",
+			"Adrenaline tour-  Parasailing over the Malecon"
+		],
+		"Summary": "Explore the coolest area in Lima, Barranco. This incredible neighborhood has a bohemian international vibe with something for everyone, especially food! Amazing older homes in stunning Spanish architecture line the streets alongside impressive murals and art. Several museums within walking distance and many truly world-class restaurants all contribute to this hip area immense appeal.",
+		"Description": "The chauffeur picks you up from the airport in our air-conditioned SUV, he will take you for a short drive away to Barranco where he’ll drop you off at your private room overlooking the Malecon, where a small complimentary gift parcel will be waiting for you. We will let you relax and get some rest, for an hour or two before heading to lunch at La Canta Rana, the best local cevicheria in Barranco brimming with history and fresh fish. After a plate or two we bring you on a short tour of the Plaza and the main street Grau then returning to your room. At seven we come to pick you up to take you to Hotel B a luxurious restaurant in a hotel boasting incredible food in a gorgeous location. After dinner and a complimentary aperitif we bring you back to your room. In the morning we start by bringing you to a trendy breakfast place, La Panetteria, where they bake their own artisan breads.After this your English speaking guide will take you on awesome tour with electric scooters pointing out street murals while bringing you first to the romantic “Puente de Suspiros” and the “Bajada de Baños”. Then for lunch we take you to Isolina rated consistently one of the best restaurants in Latin America for a delicious family style meal. We then pick you up again from your room at seven and take you in your private car to see the lights show “Circuito Mágico del Agua” (The Magic Water Circuit) The Magic Water Circuit has the Guinness Book record for the largest fountain complex in the world, displaying 13 distinct fountains! After this for your last dinner restaurant we take you to El Hornero, a sensational steakhouse rivaling those in NY overlooking the water for a memorable meal. We then bring you back to your hotel. In the morning we back up your bags in the car before bringing you to the luxurious breakfast buffet at the Marriott right outside of Barranco before bringing you to the airport."
+	}
+]

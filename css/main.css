@@ -2,7 +2,7 @@
 /* Body Section. */
 body, html {
 	margin: 0;
-	font-family: "Roboto"
+	font-family: "Roboto";
 }
 
 /* First Section - Gradient, Big Package image,text and logo. */
@@ -208,7 +208,4 @@ footer {
 footer > p {
 	text-align: center;
 	color: var(--font-light);
-}
-
-
 }
