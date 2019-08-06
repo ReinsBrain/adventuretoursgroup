@@ -2,7 +2,7 @@
 /* Body Section. */
 body, html {
 	margin: 0;
-	font-family: "Roboto"
+	font-family: "Roboto";
 }
 
 /* First Section - Gradient, Big Package image,text and logo. */
@@ -138,8 +138,8 @@ h1, h3 {
 }
 
 /* Third Section - Slider */
-
-{box-sizing:border-box}
+/*
+{box-sizing:border-box}*/
 
 /* Slideshow container */
 .slideshow-container {

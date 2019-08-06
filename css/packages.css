@@ -1,0 +1,39 @@
+body {
+	background: var(--packages-bg);
+}
+.title-right {
+	background: var(--packages-title-bg);
+}
+
+.packages > * {
+	padding: 0 10px;
+	width: 93vw;
+	margin: auto;
+	background: rgba(255, 255, 255, .5);
+	border-radius: 6px;
+}
+
+.first.Paracas {
+	background: url('https://img.elcomercio.pe/files/ec_article_multimedia_gallery/uploads/2018/09/13/5b9aa200b8f03.jpeg') no-repeat;
+	background-size: cover;
+}
+
+.first.Lima {
+	background: url('https://upload.wikimedia.org/wikipedia/commons/4/45/Miraflores_Lima_Peru_skyline.jpg');
+	background-size: cover;
+}
+
+.first.Jungle {
+	background: url('https://img.elcomercio.pe/files/ec_article_multimedia_gallery/uploads/2017/07/11/5964fb636ff06.jpeg');
+	background-size: cover;
+}
+
+.first.Arequipa {
+	background: url('https://img.elcomercio.pe/files/ec_article_multimedia_gallery/uploads/2018/09/28/5baea4d0abb7c.jpeg');
+	background-size: cover;
+}
+
+.gradient > h3 {
+	text-align: end;
+	padding-right: 20px;
+}
