@@ -68,6 +68,7 @@ h1, h3 {
 	grid-template-columns: 33% 34% 33%;
 	align-content: center;
 	padding-top: 8em;
+	padding-bottom: 8em;
 }
 
 .pack {
@@ -96,13 +97,20 @@ h1, h3 {
 	border: 1px solid black;
 	background-position: bottom center;
 }
-
+/*----------------------------------------*/
 .text {
-	height: 5vh;
-	position: relative;
-	top: 300px;
+	display: grid;
+}
+
+.text > ul {
+	font-size: 16px;
 	text-align: center;
-	font-size: 1.3em;
+	list-style-type: none;
+}
+
+.text > a {
+	text-align: center;
+	font-size: 22px;
 }
 
 .read-more {
@@ -131,30 +139,88 @@ h1, h3 {
 
 /* Third Section - Slider */
 
-.slider {
-	height: 60vh;
-	background-color: var(--slider-bg);
-	display: grid;
-	color: white;
+{box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
 }
 
-.slider > div {
-	border: 1px solid white;
-	grid-template-columns: 20% 20% 20% 20% 20%;
-	width: auto;
-	height: auto;
-	visibility: hidden;
-	display: none;
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
 }
 
-.slider > div.active {
-	visibility: visible;
-	display: block;
-	background: url('https://res.cloudinary.com/dlia7phdx/image/upload/v1564683039/ATG/Slider/slider1.jpg');
-	background-repeat: no-repeat;
-	background-size: contain;
-	
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
 }
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.slidertext {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/7 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.mySlides.fade.active {
+    display: block;
+}
+
 /* Forth (Spacing) Section - Just a few pixels between the Slider and the Comment section. */
 
 .sep {
@@ -165,7 +231,7 @@ h1, h3 {
 /* Fifth Section - Comment section. */
 
 .comments {
-	height: 40vh;
+	height: 30vh;
 	background: url('https://res.cloudinary.com/dlia7phdx/image/upload/v1564095631/ATG/atg-mp-big.jpg');
 	background-size: cover;
 	background-position: center;
