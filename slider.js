@@ -7,9 +7,9 @@ document.addEventListener('DOMContentLoaded', () => {
 		slideIndex++;
 		showSlides(slideIndex);
 	});
-	// TODO: PREV
+	//  prev
 	const Prev = document.querySelector('.prev');
-	// next btn
+	// prev btn
 	Prev.addEventListener('click', () => {
 		slideIndex--;
 		showSlides(slideIndex);
