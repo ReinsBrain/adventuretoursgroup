@@ -87,7 +87,7 @@ h1, h3 {
 }
 
 .machupicchu {
-	background: url('https://res.cloudinary.com/dlia7phdx/image/upload/v1564342728/ATG/Machu_Picchu.jpg');
+	background: url('https://res.cloudinary.com/dlia7phdx/image/upload/v1565189750/ATG/machu-picchu-amanecer.jpg');
 	border: 1px solid black;
 	background-position: center;
 }
@@ -143,7 +143,7 @@ h1, h3 {
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 1000px;
+  /* max-width: 1000px; */
   position: relative;
   margin: auto;
 }
@@ -200,12 +200,15 @@ h1, h3 {
 /* Caption text */
 .slidertext {
   color: #f2f2f2;
-  font-size: 15px;
+  font-size: 40px;
   padding: 8px 12px;
   position: absolute;
-  bottom: 8px;
+  top: 35%;
   width: 100%;
   text-align: center;
+  font-weight: 300;
+  text-shadow: 2px 2px darkgray;
+  box-sizing: border-box;
 }
 
 /* Number text (1/7 etc) */
@@ -215,6 +218,7 @@ h1, h3 {
   padding: 8px 12px;
   position: absolute;
   top: 0;
+  display: none;
 }
 
 .mySlides.fade.active {
@@ -225,7 +229,8 @@ h1, h3 {
 
 .sep {
 	height: 50%;
-	background-color: var(--darkgray);
+	background-color: white;
+	color: white;
 }
 
 /* Fifth Section - Comment section. */
