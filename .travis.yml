@@ -14,7 +14,8 @@ script:
   ${TRAVIS_PULL_REQUEST}'
 notifications:
   slack:
-    secure: ZANyftmbMWZ8VkwolrGkrjUAKYTdocDQVw2Hxr/dSn6M75CgZr6ZzDyup8UpTHDw9vOhWS990Gs3pFkUftHAe8tmZ2Dy2rwSybf6wgKS63KoMHE5OadAVlbTaWoXQ1UV6No478MOhC2Z5e6llY6kZ54F+EtEIxtXzDcvGXltFmLiHyHs9IMwe2DhxfjyjdZze2oA/gQiS0RC7Ol04RCYFgpB+sdJIDHG0pgEN8Fe7BGgatSZVKIatlAA21XG0gEg32saGUrmJ3iU2NAEWGeuJ6nFVC14kGAJ3KIv3yIos0HelOkmPRJeizLazUP68tbD8T2liv58AV8LCo2LkTxV/pOA7HBVzyoztRpiKCmoLtccbEN2LJX1IS+4DjVYtaTpvpfqGIQv0Jgn4woV27ed3GdwB7611UsObgCV14XQiNr3udppnrYVRZJFhcq8P/RvLHXyPuG8HE1fZhyn3HEwdbXJPqTZnXn3k+t1h25q3u5i7D+RGSM+jh+MUI2suXEoMs5npZGoMzKNMGyeD/MHv5RYOV0UclmvG2YYJARAxEAMx/UOsX2H0hBrEWuFXJENP4Jw7pxwz+5HD1AS/q0M9J3FCjG1w9NFFjHsruQy8fOQ95tpXiNU+uY5i1Y47SRy/WMOWws1NTxjMQpv3FKcjvqeV04f58K02UkAyVXJXHM=
+    rooms:
+     - rebelstackio:WyCcy84Yihg6JzdLG9MGNGD2
   template:
     - "Build <%{build_url}|#%{build_number}> (<%{compare_url}|%{commit}>) of %{repository_slug}@%{branch} by %{author} %{result} in %{duration}."
     - "Pull Request <%{pull_request_url}|#%{pull_request_number}> by %{author} %{result}. Pull request deploy: http://adventuretoursgroup-%{pull_request_number}.s3-website-us-west-1.amazonaws.com"

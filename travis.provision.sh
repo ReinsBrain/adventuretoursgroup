@@ -16,6 +16,10 @@ echo "..........Deleting useless file for deploy.........."
 
 rm -rf $TRAVIS_BUILD_DIR/docs
 rm -rf $TRAVIS_BUILD_DIR/imgs
+rm -rf $TRAVIS_BUILD_DIR/.git
+rm -f $TRAVIS_BUILD_DIR/CNAME
+rm -f $TRAVIS_BUILD_DIR/.travis.yml
+rm -f $TRAVIS_BUILD_DIR/travis.provision.sh
 
 build_dir=$TRAVIS_BUILD_DIR/
 
