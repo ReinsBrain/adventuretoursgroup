@@ -15,6 +15,7 @@ function render (data) {
 	const mainBox = document.querySelector('.packages');
 	let locationName = document.location.pathname.split('/')[2];
 	locationName = locationName.split('-').join(' ');
+	locationName = locationName.replace('%26', '&');
 	data.forEach(pack => {
 		console.log(locationName, pack.title)
 		if (locationName.toUpperCase() === pack.title.toUpperCase()) {

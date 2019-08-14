@@ -1,0 +1,85 @@
+[
+	{
+		"title": "CUZCO ROYALTY PACK",
+		"tags": ["rest&relax"],
+		"include": {
+			"Day 1": [
+				"Airport pickup",
+				"Drive to Hidrolitica",
+				"Lunch",
+				"Train ride to Aguas Calientes",
+				"Dinner"
+			],
+			"Day 2": [
+				"Breakfast",
+				"Machu Picchu experience",
+				"Lunch",
+				"Departure to airport"
+			]
+		},
+		"Additional": [
+			"See the infamous Huayna Picchu",
+			"Honeymoon special"
+		],
+		"Summary": "An enigmatic sight and one of the current 7 World Wonders, Machu Picchu is one of the most breathtaking bucket list locations there are. Located in the old capital Cuzco high in the mountains this awe-inspiring location once hidden for centuries is now accessible to all adventurous travelers.",
+		"Description": "After picking you up from the airport in Cuzco, our private air-conditioned vehicle will take you on a beautiful scenic ride to Hydroletica. Once here we will take you to a local spot for a quick lunch. After this you will take an incredible luxury train ride with panoramic view through a rainforest with amazing vistas and flora and fauna to head a small town called Aguas Calientes, the basecamp for Machu Picchu. There we will take you to your private room and let you rest and try to become acclimated over the next day. After a few hours for dinnertime, we will pick you up and bring you to one of the nicest restaurants in the region for some craft beer or wine and a personalized tasting menu, which for the more adventurous eater will include the local delicacy Cuey! After this, we recommend getting a good night's sleep to prepare for the next day. After an early wake-up, we take you to a great breakfast place close by for your fill of delicious foods to enjoy. After this, the bus takes you up to begin the trek up to the world-famous Machu Picchu. Once there after briefly going through security, a private English speaking guide will take you on a two-hour hike explaining the history of this amazing locale. After departing we bring you back down to your hotel to take a nap and shower before bringing you to another restaurant for an early dinner and last meal of the trip. A fine dining locale with a 3-course meal and a complimentary bottle of wine or rounds of pisco cocktails. After this, our chauffeur will load up the SUV with your luggage and bring you back to the airport for your flight."
+	},
+	{
+		"title": "ANCIENT MEGALITHIC MYSTERY PACKAGE",
+		"tags": ["rest&relax"],
+		"include": {
+			"Day 1": [
+				"Airport pickup",
+				"Hotel drop off",
+				"Lunch  at Yaku",
+				"Trip and Tour of Saqsaywaman",
+				"Ride back to the Hotel",
+				"Dinner at Uchu Peruvian Steakhouse"
+			],
+			"Day 2": [
+				"Breakfast at hotel",
+				"12 sided stone",
+				"Lunch at Morena Peruvian Kitchen",
+				"Q’ uenco complex",
+				"Dinner at chicha por Gaston Acurio"
+			],
+			"Day 3": [
+				"Breakfast",
+				"Drop off at airport"
+			]
+		},
+		"Additional": [
+			"Honeymoon Option",
+			"Open Bar",
+			"Shaman visit and blessing"
+		],
+		"Summary": "In the past few decades so many new theories have come up proposing we don’t know as much about our ancient history as we would like to admit. What everyone can agree on is that all over the world Megaliths were constructed at a time when such undertakings would have been truly hard to conceive. This package takes you to several incredible sights while our guide discusses fascinating alternative theories all while enjoying VIP accommodations.",
+		"Description": "Our chofer first picks you up from the airport and brings you to your hotel Palacio Del Inka, one of the most luxurious hotels in Cuzco. After checking in we give you an hour to unpack and relax before bringing you for lunch at Yaku, rated the top lunch spot in town. After we bring you in a private vehicle to the UNESCO world heritage site Saqsaywaman. You will have a English speaking guide show you around the amazing place for a few hours taking in these ruins. After we drive you back to your hotel to shower and relax for a while before again picking you up in the evening for dinner. This time your meal is at Uchu Peruvian Steakhouse, where you can get a terrific steak or try some alpaca if your feeling adventurous. In the morning after a big breakfast at the hotel we bring you to another infamous spot the twelve sided stone outside the palace of Cuzco's Archbishop. After a quick photo op here we bring you to Morena Peruvian Kitchen for a delicious meal. We then bring you to the Q’uenco complex with an English speaking guide to give you a tour of this enigmatic locale. After sufficient time there we will bring you back to your hotel to rest for a few hours. We then bring you for dinner at the very fancy Chicha Por Gaston Acurio restaurant where you will enjoy a delicious Peruvian dinner. After breakfast at the hotel in the morning we pack your bags up and give you a complimentary thank you gift and bring you to either the airport or local hotel."
+	},
+	{
+		"title": "Exotic Eats Cuzco Culinary Package",
+		"tags": ["rest&relax"],
+		"include": {
+			"Day 1": [
+				"Airport pickup",
+				"Hotel drop off",
+				"Lunch at Uchu Peruvian Steakhouse",
+				"Plaza de Armas tour",
+				"Dinner at Kusikuy Restaurante",
+				"Emoliente"
+			],
+			"Day 2": [
+				"Tour of market",
+				"Breakfast",
+				"Drop off at local hotel or airport"
+			]
+		},
+		"Additional": [
+			"Honeymoon Option",
+			"Open Bar",
+			"Adrenaline Option: Rappelling in Cuzco"
+		],
+		"Summary": "The original kingdom of the Incas, Cuzco has been mesmerising tourists for decades. This tour combines old world charm with exotic regional specialties for the more adventurous traveler. Try rare delicacies at several places while staying in comfort at VIP accommodations",
+		"Description": "Pickup by chauffeur and private SUV brings you to your room at Palacio del Inka, one of the most luxurious hotels in Cuzco. After bringing your luggage up to your room and giving you a complimentary welcome goodie box we give you an hour or so to relax before bringing you to lunch at Uchu Peruvian Steakhouse for an exotic cut like alpaca or the local delicacy anticuchos with a couple glasses of native red wine. After dining we bring you back to your hotel to relax and acclimate to the altitude. Later on that night we take you to the plaza de armas with a English speaking guide to point out places of interest and enlightens you about the history of Cuzco. After the tour finishes in about an hour we take you for dinner at Kusikuy Restaurante, known for being the premier restaurant in Cuzco for the infamous regional specialty Cuy. After your meal we bring you to a humble Emoliente cart on the way back to your hotel for a warming cup of the healing local tea. In the morning we load your luggage into a private vehicle before taking you to a local market with a English speaking guide for breakfast. Try tamales, sandwiches and exotic fruits before we bring you to local hotel or airport."
+	}
+]
