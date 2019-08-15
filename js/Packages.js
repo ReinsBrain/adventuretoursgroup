@@ -24,23 +24,59 @@ function render (data) {
 		}
 	});
 }
-
+/**
+ * write the current pack
+ * @param { * } pack 
+ * @param { HTMLElement } mainBox 
+ */
 function writePack(pack, mainBox) {
+	setSlider(pack.imgs);
 	const box = document.createElement('div');
+	const includeBox = document.createElement('div');
+	includeBox.innerHTML = `
+		<h3>Your Itinerary</h3>
+	`;
+	box.className = "summary";
+	includeBox.className = "include-area";
 		box.innerHTML = `
 			<h3>${pack.title}</h3>
-			<p>${pack.Description}</p>
+			<p>
+				${pack.Description}
+			</p>
+			<div class="gradient-white">
+				<div id="expand">Show More</div>
+			</div>
 		`;
+		const btn = box.querySelector('#expand');
+		btn.addEventListener('click', () => {
+			box.classList.toggle('expanded');
+			if (box.classList.contains('expanded')) {
+				btn.textContent = 'Show Less';
+			} else {
+				btn.textContent = 'Show More';
+			}
+		});
 		Object.keys(pack.include).map((key) => {
 			const arr = pack.include[key];
-			const ul = document.createElement('ul');
+			const ul = document.createElement('div');
+			ul.className = 'itinerary';
 			ul.innerHTML = `
-				<span>${key}<span>
+				<div class="itinerary-title">${key}</div>
 				${arr.map(itin => {
-					return `<li>${itin}</li>`
+					return `<div class="itinerary-item">${itin}</div>`
 				}).join('')}
 			`
-			box.appendChild(ul);
-		})
-		mainBox.appendChild(box);
+			includeBox.appendChild(ul);
+		});
+		const backgroundArea = document.createElement('div');
+		mainBox.append(box, includeBox);
+}
+/**
+ * 
+ * @param {Array} imgs 
+ */
+function setSlider (imgs) {
+	const slider = document.querySelector('.moving-background');
+	slider.style.background = `url(${ imgs[0] })`;
+	slider.style.backgroundSize = "cover";
 }

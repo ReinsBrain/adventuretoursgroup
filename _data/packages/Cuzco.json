@@ -2,6 +2,9 @@
 	{
 		"title": "Cuzco Royalty Pack",
 		"tags": ["rest&relax"],
+		"imgs": [
+			"https://res.cloudinary.com/dlia7phdx/image/upload/v1565900464/ATG/Packs/Cuzco%20Royalty%20Tour/19822922902_68f432b6fe_b.jpg"
+		],
 		"include": {
 			"Day 1": [
 				"Airport pickup",
@@ -26,6 +29,9 @@
 	},
 	{
 		"title": "Ancient Megalithic Mystery Pack",
+		"imgs": [
+			"https://res.cloudinary.com/dlia7phdx/image/upload/v1565900447/ATG/Packs/Ancient%20Megalith%20Mystery%20Pack/sunrise-cusco-peru-shutterstock_354971309-1024x683.jpg"
+		],
 		"tags": ["rest&relax"],
 		"include": {
 			"Day 1": [
@@ -58,6 +64,9 @@
 	},
 	{
 		"title": "Exotic Eats Cuzco Culinary Pack",
+		"imgs": [
+			"https://res.cloudinary.com/dlia7phdx/image/upload/v1565900473/ATG/Packs/Exotic%20Eats%20Cuzco%20Pack/catedral-cusco-peru-01.jpg"
+		],
 		"tags": ["rest&relax"],
 		"include": {
 			"Day 1": [

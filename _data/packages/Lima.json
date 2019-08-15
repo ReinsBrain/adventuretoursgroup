@@ -2,6 +2,9 @@
 	{
 		"title": "Miraflores Spa R&R Pack",
 		"tags": ["rest&relax"],
+		"imgs": [
+			"https://res.cloudinary.com/dlia7phdx/image/upload/v1565900465/ATG/Packs/Miraflores%20Sap%20RnR%20Pack/Miraflores_Lima_Peru_skyline.jpg"
+		],
 		"include": {
 			"Day 1": [
 				"Airport pickup",
@@ -26,6 +29,9 @@
 	{
 		"title": "Barranco Gastro Pack",
 		"tags": ["rest&relax"],
+		"imgs": [
+			"https://res.cloudinary.com/dlia7phdx/image/upload/v1565900448/ATG/Packs/Barranco%20Gastro%20Pack/5a85b5d1d486f.jpg"
+		],
 		"include": {
 			"Day 1": [
 				"Pick up from airport",

@@ -1,6 +1,9 @@
 [
 	{
 		"title": "Tarapoto Laguna Azul Jungle Pack",
+		"imgs": [
+			"https://res.cloudinary.com/dlia7phdx/image/upload/v1565900466/ATG/Packs/Tarapoto%20Laguna%20Azul/tour-laguna-azul-3-1024x684.jpg"
+		],
 		"tags": ["rest&relax"],
 		"include": {
 			"Day 1": [

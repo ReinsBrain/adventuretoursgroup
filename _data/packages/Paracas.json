@@ -2,22 +2,25 @@
 	{
 		"title": "Huacachina Honeymoon Pack",
 		"tags": ["rest&relax", "romance", "cuisine", "adventure", "ica"],
+		"imgs": [
+			"https://res.cloudinary.com/dlia7phdx/image/upload/v1565900476/ATG/Packs/Huacachina%20Pack/5b9aa200b8f03.jpg"
+		],
 		"include": {
 			"Day 1": [
-				"[1200] Guided tour Vinas Queirolo with wine and pisco tasting",
-				"[1245] Lunch at Vinas Queirolo",
-				"[1345] Transfer to DM Hotel",
-				"[1400] Check-in DM Hotel",
-				"[1415] Relaxing spa/pool time at Hotel",
-				"[1700] Sunset on the dunes ( private dune buggy ride )",
-				"[1900] Dinner at El Coral",
+				"Guided tour Vinas Queirolo with wine and pisco tasting",
+				"Lunch at Vinas Queirolo",
+				"Transfer to DM Hotel",
+				"Check-in DM Hotel",
+				"Relaxing spa/pool time at Hotel",
+				"Sunset on the dunes ( private dune buggy ride )",
+				"Dinner at El Coral",
 				"Free Peruvian Chilcano at X Bar"
 			],
 			"Day 2": [
-				"[0700] Continental Breakfast",
-				"[0900] Lagoon boat ride",
-				"[1000] Check-out",
-				"[1030] Transfer"
+				"Continental Breakfast",
+				"Lagoon boat ride",
+				"Check-out",
+				"Transfer"
 			]
 		},
 		"Additional": [
@@ -31,6 +34,9 @@
 	{
 		"title": "Exclusive 3 Day VIP Intimar Experience",
 		"tags": ["rest&relax", "romance", "cuisine", "farm", "hotel"],
+		"imgs": [
+			"https://res.cloudinary.com/dlia7phdx/image/upload/v1565900469/ATG/Packs/2%20day%20VIP%20intimar%20Pack/tour_img-1143632-146.jpg"
+		],
 		"include": {
 			"Day 1": [
 				"Islas Ballestas VIP tour",
@@ -62,6 +68,9 @@
 	{
 		"title": "Exclusive 2 Day VIP Intimar Experience",
 		"tags": ["rest&relax", "beach", "splash", "romance", "cuisine", "adventure", "paracas"],
+		"imgs": [
+			"https://res.cloudinary.com/dlia7phdx/image/upload/v1565900467/ATG/Packs/2%20day%20VIP%20intimar%20Pack/IntiMar_Paracas_Bay-Paracas-Aussenansicht-942339.jpg"
+		], 
 		"include": {
 			"Day 1": [
 				"Luggage transfer to Intimar",
