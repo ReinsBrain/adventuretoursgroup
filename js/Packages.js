@@ -56,6 +56,11 @@ function writePack(pack, mainBox) {
 				btn.textContent = 'Show More';
 			}
 		});
+		const btnBox = document.createElement('div');
+		btnBox.className = "book-btn";
+		const btnBook = document.createElement('button');
+		btnBook.className = 'book';
+		btnBook.textContent = 'Book Now';
 		Object.keys(pack.include).map((key) => {
 			const arr = pack.include[key];
 			const ul = document.createElement('div');
@@ -68,6 +73,8 @@ function writePack(pack, mainBox) {
 			`
 			includeBox.appendChild(ul);
 		});
+		btnBox.appendChild(btnBook)
+		includeBox.appendChild(btnBox);
 		const backgroundArea = document.createElement('div');
 		mainBox.append(box, includeBox);
 }

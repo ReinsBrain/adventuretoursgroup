@@ -14,7 +14,7 @@ body {
 }
 
 .packages h3 {
-	color: #000;
+	color: #666;
 }
 
 .packages > * {
@@ -41,6 +41,8 @@ body {
 	font-size: 1.6em;
 	align-self: end;
 	opacity: 1;
+	padding-bottom: 1em;
+	margin-left: 1em;
 }
 
 .include-area {
@@ -50,11 +52,13 @@ body {
 	/* background-size: cover; */
 	/* opacity: 0.2; */
 	opacity: 1;
+	background-color: #f4a4609c;
 }
 
 .summary {
 	padding: 20px 50px;
 	position: relative;
+	max-height: 500px;
 }
 
 .summary > h3, .include-area > h3 {
@@ -133,4 +137,28 @@ body {
 	position: absolute;
 	z-index: -1;
 	background-color: #f4a46080;
+}
+
+.gradient > .book {
+	align-self: end;
+	margin-bottom: 1em;
+	justify-self: end;
+}
+
+.book-btn {
+	display: grid;
+}
+
+.book-btn > button {
+	margin: .5em auto 0 auto;
+	width: 153px;
+}
+
+.book-btn > button:hover {
+	background-color: #f97806;
+	border-color: #f97806;
+}
+
+.summary.expanded {
+    max-height: unset;
 }

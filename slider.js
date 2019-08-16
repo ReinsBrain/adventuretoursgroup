@@ -4,14 +4,22 @@ document.addEventListener('DOMContentLoaded', () => {
 	const Next = document.querySelector('.next');
 	// next btn
 	Next.addEventListener('click', () => {
-		slideIndex++;
+		if (slideIndex < 7) {
+			slideIndex++
+		} else {
+			slideIndex = 0;
+		}
 		showSlides(slideIndex);
 	});
 	//  prev
 	const Prev = document.querySelector('.prev');
 	// prev btn
 	Prev.addEventListener('click', () => {
-		slideIndex--;
+		if (slideIndex > 0) {
+			slideIndex--
+		} else {
+			slideIndex = 6;
+		}
 		showSlides(slideIndex);
 	});
 });

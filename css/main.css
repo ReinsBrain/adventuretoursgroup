@@ -6,6 +6,7 @@
 /* Body Section. */
 body, html {
 	margin: 0;
+	background-color: ghostwhite;
 }
 
 /* First Section - Gradient, Big Package image,text and logo. */
@@ -17,25 +18,31 @@ body, html {
 
 .first {
 	position: relative;
-	height: 100vh;
+	height: 60vh;
 	overflow: hidden;
 }
 
+.first.init {
+	height: 100vh;
+}
+
 .gradient {
-	height: 10em;
+	height: 7em;
 	position: absolute;
 	bottom: 0;
 	background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0,0.9) 40%);
 	width: 100%;
 	display:grid;
+	grid-auto-flow: column;
+	grid-template-columns: 1.5fr auto;
 }
 
 .gradient > div {
 	font-size: .8em;
 }
 
-.gradient button {
-	height: 6vh;
+.gradient button, .book {
+	height: 1.5em;
 	background-color: orange;
 	color: #000;
 	place-self: center;
@@ -60,6 +67,7 @@ h1, h3 {
 	color: var(--font-light);
 	text-align: center;
 	font-weight: 300;
+	margin: 0;
 }
 
 /* Second Section - Package Section and Read More. */
@@ -67,34 +75,36 @@ h1, h3 {
 .second {
 	background-color: ghostwhite;
 	display: grid;
-	grid-template-columns: 33% 34% 33%;
+	grid-template-columns: 1fr 1fr 1fr;
 	align-content: center;
-	padding-top: 8em;
-	padding-bottom: 8em;
+	padding-top: 2em;
+	padding-bottom: 2em;
+	grid-column-gap: 1em;
+	grid-row-gap: 1em;
+	width: 100%;
 }
 
 .pack {
 	height: 300px;
 	width: auto;
-	margin: 0 10px 0 10px;
+	/* margin: 0 10px 0 10px; */
 	background-repeat: no-repeat !important;
 	background-size: cover !important;
 	border-radius: 4px;
 	transition: all .2s ease-in-out;
 	cursor: pointer;
-	border: 1px solid #d3d3d3;
 }
 
 .pack:hover {
-    transform: scale(1.1) translate(0px, -11px);
+    transform: scale(1.05) translate(0px, -11px);
 }
 
 .paracas {
-	background: url('https://res.cloudinary.com/dlia7phdx/image/upload/v1564342728/ATG/Paracas.jpg');
+	background: url('https://res.cloudinary.com/dlia7phdx/image/upload/v1565900469/ATG/Packs/2%20day%20VIP%20intimar%20Pack/tour_img-1143632-146.jpg');
 }
 
 .machupicchu {
-	background: url('https://res.cloudinary.com/dlia7phdx/image/upload/v1565189750/ATG/machu-picchu-amanecer.jpg');
+	background: url('https://res.cloudinary.com/dlia7phdx/image/upload/v1565900447/ATG/Packs/Ancient%20Megalith%20Mystery%20Pack/sunrise-cusco-peru-shutterstock_354971309-1024x683.jpg');
 	background-position: center;
 }
 
@@ -105,17 +115,24 @@ h1, h3 {
 /*----------------------------------------*/
 .text {
 	display: grid;
+	margin-top: 1em;
+	padding-left: 10px;
 }
 
 .text > ul {
 	font-size: 16px;
-	text-align: center;
+	text-align: start;
 	list-style-type: none;
+	list-style-image: url('./icons/star-solid.svg');
+}
+
+.text > ul > li {
+	margin: 5px 0;
 }
 
 .text > a {
-	text-align: center;
-	font-size: 22px;
+	text-align: start;
+	font-size: 1.4em;
 }
 
 .read-more {
@@ -133,7 +150,6 @@ h1, h3 {
 }
 
 .text:hover {
-	text-decoration: underline;
 	cursor:pointer;
 }
 
@@ -207,11 +223,10 @@ h1, h3 {
   font-size: 40px;
   padding: 8px 12px;
   position: absolute;
-  top: 35%;
+  top: 43%;
   width: 100%;
   text-align: center;
   font-weight: 300;
-  text-shadow: 2px 2px darkgray;
   box-sizing: border-box;
 }
 
@@ -240,28 +255,51 @@ h1, h3 {
 /* Fifth Section - Comment section. */
 
 .comments {
-	height: 30vh;
-	background: url('https://res.cloudinary.com/dlia7phdx/image/upload/v1564095631/ATG/atg-mp-big.jpg');
-	background-size: cover;
+	position: relative;
+	background-color: black;
 	background-position: center;
-	display: grid;
-	grid-template-columns: auto auto auto;
 	align-content: center;
 	text-align: -webkit-center;
-	color: var(--font-light);
+	color: #fff;
 	font-weight: 300;
-	grid-column-gap: 20px;
+	padding: 2em 0;
+	color: #666;
+	z-index: 1;
+}
+
+.comments > .people {
+	display: grid;
+	grid-auto-flow: column;
+
+}
+
+.comments::after {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	content: "";
+	background-image: url('https://res.cloudinary.com/dlia7phdx/image/upload/v1565900464/ATG/Packs/Cuzco%20Royalty%20Tour/19822922902_68f432b6fe_b.jpg');
+	background-size: cover;
+	opacity: 0.7;
+	z-index: -1;
+}
+
+.comments *, .comments .people {
+	z-index: 10;
 }
 
 .title {
-	grid-column-start: 1; 
-	grid-column-end: 4; 
-	grid-row-start: 1; 
-	grid-row-end: 3; 
+	grid-row-end: 3;
 	height: 80px;
 	font-size: 200%;
-	text-decoration: underline;
-	font-weight: 300;
+	font-weight: 400;
+	font-style: italic;
+	color: ghostwhite;
+	text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+	z-index: 1000;
+	opacity: 1;
 }
 
 /* Footer - Icons for Ecofriendly, Trip Advisor and English/Spanish Language */
@@ -310,9 +348,101 @@ footer > p {
 	right: -6%;
 	overflow: hidden;
 	position: absolute;
-	z-index: -1;
 	animation-name: move-bg;
 	animation-duration: 30s;
 	animation-timing-function: linear;
 	animation-iteration-count: infinite;
+}
+
+.moving-background.init {
+	background: url('https://res.cloudinary.com/dlia7phdx/image/upload/v1564095631/ATG/atg-mp-big.jpg');
+	background-size: cover;
+}
+
+.init .gradient {
+	grid-template-columns: auto;
+	height: 8em;
+	grid-auto-flow: row;
+}
+
+.gradient-white.landpage {
+	background-color: ghostwhite;
+}
+
+.gradient-white.landpage > div {
+	align-self: end;
+	margin-bottom: 2em;
+	justify-self: center;
+	border: 1px solid sandybrown;
+	border-radius: 2px;
+	padding: 5px;
+	font-size: 1.3em;
+	color: sandybrown;
+	user-select: none;
+	cursor: pointer;
+	width: 6em;
+	margin: auto;
+	text-align: center;
+	margin-bottom: 1em;
+	/* color: #666; */
+}
+
+.comments img {
+	width: 5em;
+	align-self: center;
+	display: block;
+	box-shadow: 6px 6px 11px -4px rgba(0,0,0,0.75);
+	border-radius: 50%;
+}
+
+.person-name {
+	font-size: 1.1em;
+	margin-bottom: 5px;
+	align-self: end;
+}
+.people > div:not(.title) {
+	margin: 5px;
+	padding: 5px 15px 5px 5px;
+	border-radius: 4px;
+	border: 1px solid sandybrown;
+	background-color: ghostwhite;
+	min-height: 60px;
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+}
+
+.comments .person {
+	display: grid;
+}
+
+.comments p {
+	font-style: italic;
+	border-radius: 10px;
+	color: ghostwhite;
+	background-color: rgba(0,0,0,0.3);
+	padding: 5px 6px;
+	box-shadow: 6px 6px 11px -4px rgba(0,0,0,0.75);
+	border-top-left-radius: 0;
+	margin-top: 5px;
+}
+.stars {
+	width: 50%;
+	display: grid;
+	grid-auto-flow: column;
+}
+.stars > div {
+	content: "";
+	background-image: url('./icons/star-solid.svg');
+	width: 15px;
+	height: 15px;
+	background-repeat: no-repeat;
+}
+
+.second > *:not(.gradient-white) {
+	background-color: #fff;
+	padding: 0 0 5px 0;
+	border-radius: 8px;
+	box-shadow: 6px 6px 11px -4px rgba(0,0,0,0.75);
+	margin: 0 10px;
+	overflow: hidden;
 }
