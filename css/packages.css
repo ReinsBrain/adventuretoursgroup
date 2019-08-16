@@ -125,6 +125,9 @@ body {
 
 .include-area {
 	position: relative;
+	margin: 10px;
+	border-radius: 6px;
+	box-shadow: 6px 6px 11px -4px rgba(0,0,0,0.75)
 }
 
 .include-area::after {
@@ -137,6 +140,10 @@ body {
 	position: absolute;
 	z-index: -1;
 	background-color: #f4a46080;
+}
+
+.include-area h3 {
+	border-bottom: 1px solid #66666657;
 }
 
 .gradient > .book {
