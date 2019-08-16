@@ -159,6 +159,9 @@ body {
 .book-btn > button {
 	margin: .5em auto 0 auto;
 	width: 153px;
+	font-size: 1.5em;
+	height: unset;
+	width: 8em;
 }
 
 .book-btn > button:hover {

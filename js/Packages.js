@@ -84,6 +84,6 @@ function writePack(pack, mainBox) {
  */
 function setSlider (imgs) {
 	const slider = document.querySelector('.moving-background');
-	slider.style.background = `url(${ imgs[0] })`;
+	slider.style.background = `url(${ imgs[0] }) 0% 70%`;
 	slider.style.backgroundSize = "cover";
 }

@@ -14,6 +14,7 @@ body, html {
 .logo {
 	position: relative;
 	padding: 15px;
+	cursor: pointer;
 }
 
 .first {
@@ -100,16 +101,16 @@ h1, h3 {
 }
 
 .paracas {
-	background: url('https://res.cloudinary.com/dlia7phdx/image/upload/v1565900469/ATG/Packs/2%20day%20VIP%20intimar%20Pack/tour_img-1143632-146.jpg');
+	background: url('https://res.cloudinary.com/dlia7phdx/image/upload/v1565989140/ATG/Packs/paracascolorful.jpg');
 }
 
 .machupicchu {
-	background: url('https://res.cloudinary.com/dlia7phdx/image/upload/v1565900447/ATG/Packs/Ancient%20Megalith%20Mystery%20Pack/sunrise-cusco-peru-shutterstock_354971309-1024x683.jpg');
+	background: url('https://res.cloudinary.com/dlia7phdx/image/upload/v1565986844/ATG/Packs/acient_megaverga.jpg');
 	background-position: center;
 }
 
 .lima {
-	background: url('https://res.cloudinary.com/dlia7phdx/image/upload/v1564101948/ATG/Lima.png');
+	background: url('https://res.cloudinary.com/dlia7phdx/image/upload/v1565986897/ATG/Packs/1547657073-49899908-1958822330833343-3696327805026435072-ojpg.jpg');
 	background-position: bottom center;
 }
 /*----------------------------------------*/
@@ -166,8 +167,10 @@ h1, h3 {
   /* max-width: 1000px; */
   position: relative;
   margin: auto;
-	width: 90%;
-	margin-bottom: 4em;
+  width: 90%;
+  margin-bottom: 4em;
+  max-height: 353px;
+  overflow: hidden;
 }
 
 /* Fading animation */
@@ -175,7 +178,7 @@ h1, h3 {
   -webkit-animation-name: fade;
   -webkit-animation-duration: 1.5s;
   animation-name: fade;
-  animation-duration: 1.5s;
+  animation-duration: .2s;
 }
 
 @-webkit-keyframes fade {
@@ -206,6 +209,7 @@ h1, h3 {
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
   user-select: none;
+  z-index: 2;
 }
 
 /* Position the "next button" to the right */
@@ -230,6 +234,7 @@ h1, h3 {
   text-align: center;
   font-weight: 300;
   box-sizing: border-box;
+  z-index: 2;
 }
 
 /* Number text (1/7 etc) */
@@ -240,10 +245,12 @@ h1, h3 {
   position: absolute;
   top: 0;
   display: none;
+  opacity: 0;
 }
 
 .mySlides.fade.active {
     display: block;
+    opacity: 1;
 }
 
 /* Forth (Spacing) Section - Just a few pixels between the Slider and the Comment section. */

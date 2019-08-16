@@ -1,10 +1,18 @@
 document.addEventListener('DOMContentLoaded', () => { 
 	var slideIndex = 0;
 	showSlides(slideIndex);
+	setInterval(() => {
+		if (slideIndex < 6) {
+			slideIndex++
+		} else {
+			slideIndex = 0;
+		}
+		showSlides(slideIndex);
+	}, 10000);
 	const Next = document.querySelector('.next');
 	// next btn
 	Next.addEventListener('click', () => {
-		if (slideIndex < 7) {
+		if (slideIndex < 6) {
 			slideIndex++
 		} else {
 			slideIndex = 0;
@@ -23,6 +31,8 @@ document.addEventListener('DOMContentLoaded', () => {
 		showSlides(slideIndex);
 	});
 });
+
+
 
 /*
 // Next/previous controls

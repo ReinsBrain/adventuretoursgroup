@@ -70,11 +70,11 @@
 		font-size: 1.5em;
 	}
 	.book-btn > button {
-		font-size: 1em;
+		/* font-size: 1em; */
 	}
 	/*Packages fixes*/
 	.second > div {
-		width: 80%;
+		width: 90%;
 		justify-self: center;
 	}
 	.second .text, .second .text li {

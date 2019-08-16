@@ -23,8 +23,9 @@ function writePack (packs) {
 	packs.forEach(p => {
 		const itemDiv = document.createElement('div');
 		const id = p.title.toUpperCase().split(' ').join('-');
+		const img = p.imgs.length > 1 ? p.imgs[1] : p.imgs[0];
 		itemDiv.innerHTML = `
-			<div class="pack" id="${ id }" style="background: url(${ p.imgs[0] })">
+			<div class="pack" id="${ id }" style="background: url(${ img })">
 			</div>
 			<div class=text>
 				<a>${ p.title }</a>
