@@ -1,0 +1,134 @@
+/* Fifth Section - Comment section. */
+
+.comments {
+	position: relative;
+	background-position: center;
+	align-content: center;
+	text-align: -webkit-center;
+	font-weight: 300;
+	padding: 50px 150px;
+	color: #666;
+	z-index: 1;
+}
+
+.comments .title {
+	text-align: left;
+	height: 80px;
+	font-size: 1.7em;
+	font-weight: 400;
+	font-style: italic;
+	color: var(--font-blue);
+	z-index: 1000;
+}
+
+.comments > .people {
+	display: grid;
+	grid-auto-flow: column;
+
+}
+
+.comments::after {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	content: "";
+	background-size: cover;
+	opacity: 0.7;
+	z-index: -1;
+}
+
+.comments *, .comments .people {
+	z-index: 10;
+}
+
+.people > div:not(.title) {
+	margin: 5px;
+	padding: 5px 15px 5px 5px;
+	border-radius: 4px;
+	background-color: ghostwhite;
+	min-height: 60px;
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+}
+
+.comments .person {
+	display: grid;
+}
+
+.comments .person img {
+	width: 7em;
+	align-self: start;
+	justify-self: center;
+	display: block;
+	box-shadow: 6px 6px 11px -4px rgba(0,0,0,0.75);
+	border-radius: 50%;
+}
+
+.comments .person-name {
+	font-size: 1.1em;
+	margin-bottom: 5px;
+	align-self: end;
+}
+
+.comments p {
+	font-style: italic;
+	border-radius: 10px;
+	color: ghostwhite;
+	background-color: rgba(0,0,0,0.3);
+	padding: 5px 6px;
+	box-shadow: 6px 6px 11px -4px rgba(0,0,0,0.75);
+	border-top-left-radius: 0;
+	margin-top: 5px;
+}
+.stars {
+	width: 50%;
+	display: grid;
+	grid-auto-flow: column;
+}
+.stars > div {
+	content: "";
+	background-image: url('./icons/star-solid.svg');
+	width: 15px;
+	height: 15px;
+	background-repeat: no-repeat;
+}
+
+@media only screen and (min-device-width: 300px) 
+				   and (max-device-width: 800px)
+				{
+	.comments {
+		padding: 2em;
+	}
+	.comments .title {
+		text-align: center;
+		font-size: 2.5em;
+	}
+}
+
+@media only screen and (min-device-width: 300px) 
+				   and (max-device-width: 800px) 
+				   and (orientation: portrait) 
+				{
+	.comments > .people {
+		grid-template-columns: none;
+		grid-column-gap: unset;
+		grid-auto-flow: row;
+	}
+}
+
+@media only screen and (min-device-width: 300px) 
+				   and (max-device-width: 800px) 
+				   and (orientation: landscape) 
+{
+	.comments > .people {
+		grid-template-columns: none;
+		grid-column-gap: unset;
+		grid-auto-flow: row;
+	}
+	.people > div:not(.title) {
+		margin: 5px 1em;
+	}
+}
+

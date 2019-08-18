@@ -35,11 +35,6 @@
 		border-top: 1px solid #f4a46047;
 		border-left: none;
 	}
-	.comments > .people {
-		grid-template-columns: none;
-		grid-column-gap: unset;
-		grid-auto-flow: row;
-	}
 	.init .gradient, .gradient {
 		grid-auto-flow: row;
 		grid-template-columns: unset;
@@ -101,16 +96,8 @@
 		grid-template-columns: auto;
 		grid-gap: 50px;
 	}
-	.comments > .people {
-		grid-template-columns: none;
-		grid-column-gap: unset;
-		grid-auto-flow: row;
-	}
 	.second > *:not(.gradient-white) {
 		margin: 0 1em;
-	}
-	.people > div:not(.title) {
-		margin: 5px 1em;
 	}
 	.book-btn > button {
 		font-size: 1em;

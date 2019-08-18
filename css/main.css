@@ -271,56 +271,6 @@ h1, h3 {
 	color: white;
 }
 
-/* Fifth Section - Comment section. */
-
-.comments {
-	position: relative;
-	background-color: black;
-	background-position: center;
-	align-content: center;
-	text-align: -webkit-center;
-	color: #fff;
-	font-weight: 300;
-	padding: 2em 0;
-	color: #666;
-	z-index: 1;
-}
-
-.comments > .people {
-	display: grid;
-	grid-auto-flow: column;
-
-}
-
-.comments::after {
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	content: "";
-	background-image: url('https://res.cloudinary.com/dlia7phdx/image/upload/v1565900464/ATG/Packs/Cuzco%20Royalty%20Tour/19822922902_68f432b6fe_b.jpg');
-	background-size: cover;
-	opacity: 0.7;
-	z-index: -1;
-}
-
-.comments *, .comments .people {
-	z-index: 10;
-}
-
-.title {
-	grid-row-end: 3;
-	height: 80px;
-	font-size: 200%;
-	font-weight: 400;
-	font-style: italic;
-	color: ghostwhite;
-	text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-	z-index: 1000;
-	opacity: 1;
-}
-
 /* Footer - Icons for Ecofriendly, Trip Advisor and English/Spanish Language */
 
 footer {
@@ -402,72 +352,13 @@ footer > p {
 }
 
 .gradient-white.landpage > div {
+	width: 6em;
 	align-self: end;
 	margin-bottom: 2em;
 	justify-self: center;
-	border: 1px solid sandybrown;
-	border-radius: 2px;
-	padding: 5px;
-	font-size: 1.3em;
-	color: sandybrown;
-	user-select: none;
-	cursor: pointer;
-	width: 6em;
 	margin: auto;
 	text-align: center;
 	margin-bottom: 1em;
-	/* color: #666; */
-}
-
-.comments img {
-	width: 5em;
-	align-self: center;
-	display: block;
-	box-shadow: 6px 6px 11px -4px rgba(0,0,0,0.75);
-	border-radius: 50%;
-}
-
-.person-name {
-	font-size: 1.1em;
-	margin-bottom: 5px;
-	align-self: end;
-}
-.people > div:not(.title) {
-	margin: 5px;
-	padding: 5px 15px 5px 5px;
-	border-radius: 4px;
-	border: 1px solid sandybrown;
-	background-color: ghostwhite;
-	min-height: 60px;
-	display: grid;
-	grid-template-columns: 1fr 2fr;
-}
-
-.comments .person {
-	display: grid;
-}
-
-.comments p {
-	font-style: italic;
-	border-radius: 10px;
-	color: ghostwhite;
-	background-color: rgba(0,0,0,0.3);
-	padding: 5px 6px;
-	box-shadow: 6px 6px 11px -4px rgba(0,0,0,0.75);
-	border-top-left-radius: 0;
-	margin-top: 5px;
-}
-.stars {
-	width: 50%;
-	display: grid;
-	grid-auto-flow: column;
-}
-.stars > div {
-	content: "";
-	background-image: url('./icons/star-solid.svg');
-	width: 15px;
-	height: 15px;
-	background-repeat: no-repeat;
 }
 
 .second > *:not(.gradient-white) {
