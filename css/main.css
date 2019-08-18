@@ -281,7 +281,7 @@ footer {
 
 .icons {
 	display: grid;
-	grid-column-start: 3;
+	/* grid-column-start: 3; */
 	align-content: center;
 	grid-auto-flow: column;
 }
@@ -300,6 +300,7 @@ footer > p {
 	text-align: start;
 	color: var(--font-light);
 	padding-left: 10px;
+	margin: 15px 0;
 }
 
 @-webkit-keyframes move-bg {
