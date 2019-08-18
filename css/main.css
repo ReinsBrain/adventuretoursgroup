@@ -78,8 +78,6 @@ h1, h3 {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	align-content: center;
-	padding-top: 2em;
-	padding-bottom: 2em;
 	grid-column-gap: 1em;
 	grid-row-gap: 1em;
 	width: 100%;
@@ -169,7 +167,7 @@ h1, h3 {
   margin: auto;
   width: 90%;
   margin-bottom: 4em;
-  max-height: 353px;
+  max-height: 347px;
   overflow: hidden;
 }
 
@@ -184,7 +182,7 @@ h1, h3 {
 .slide-bg {
     position: absolute;
     top: 0;
-    bottom: 5px;
+    bottom: 0;
     left: 0;
     right: 0;
     background-color: rgba(0,0,0,0.2);
@@ -350,6 +348,7 @@ footer > p {
 
 .gradient-white.landpage {
 	background-color: ghostwhite;
+	padding-top: 1em;
 }
 
 .gradient-white.landpage > div {

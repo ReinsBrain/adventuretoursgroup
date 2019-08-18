@@ -11,7 +11,7 @@
 	z-index: 1;
 }
 
-.comments .title {
+.comments .title, .pack-title {
 	text-align: left;
 	height: 80px;
 	font-size: 1.7em;
@@ -93,6 +93,13 @@
 	width: 15px;
 	height: 15px;
 	background-repeat: no-repeat;
+}
+
+
+.pack-title {
+	padding-top: 1em;
+	padding-left: 10px;
+	height: 2.2em;
 }
 
 @media only screen and (min-device-width: 300px) 
