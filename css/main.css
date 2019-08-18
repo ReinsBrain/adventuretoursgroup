@@ -72,15 +72,23 @@ h1, h3 {
 }
 
 /* Second Section - Package Section and Read More. */
-
 .second {
 	background-color: ghostwhite;
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	align-content: center;
-	grid-column-gap: 1em;
+	/* grid-column-gap: 1em; */
 	grid-row-gap: 1em;
-	width: 100%;
+	/* width: 100%; */
+	padding-top: 2em;
+	margin-right: 3em;
+	margin-left: 3em;
+	margin-bottom: 2em;
+}
+
+.second.init {
+	padding-top: 0;
+	margin-bottom: 1em;
 }
 
 .pack {
@@ -89,7 +97,6 @@ h1, h3 {
 	/* margin: 0 10px 0 10px; */
 	background-repeat: no-repeat !important;
 	background-size: cover !important;
-	border-radius: 4px;
 	transition: all .2s ease-in-out;
 	cursor: pointer;
 }
@@ -116,6 +123,7 @@ h1, h3 {
 	display: grid;
 	margin-top: 1em;
 	padding-left: 10px;
+	padding-right: 10px;
 }
 
 .text > ul {
@@ -123,15 +131,19 @@ h1, h3 {
 	text-align: start;
 	list-style-type: none;
 	list-style-image: url('./icons/star-solid.svg');
+	padding-left: 20px;
+	padding-right: 20px;
 }
 
 .text > ul > li {
 	margin: 5px 0;
+	font-size: 1em;
 }
 
 .text > a {
 	text-align: start;
-	font-size: 1.4em;
+	font-size: 1.2em;
+	border-bottom: 1px solid var(--darkgray);
 }
 
 .read-more {
@@ -348,7 +360,7 @@ footer > p {
 
 .gradient-white.landpage {
 	background-color: ghostwhite;
-	padding-top: 1em;
+	padding-bottom: 2em;
 }
 
 .gradient-white.landpage > div {
@@ -366,6 +378,9 @@ footer > p {
 	padding: 0 0 5px 0;
 	border-radius: 8px;
 	box-shadow: 6px 6px 11px -4px rgba(0,0,0,0.75);
-	margin: 0 10px;
+	/* margin: auto; */
+	max-width: 350px;
+	min-width: 350px;
 	overflow: hidden;
+	justify-self: center;
 }
