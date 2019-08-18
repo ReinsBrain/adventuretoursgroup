@@ -29,6 +29,7 @@
 		grid-auto-flow: row;
 		grid-template-columns: auto;
 		column-gap: unset;
+		padding: 0;
 	}
 	.include-area {
 		border-top: 1px solid #f4a46047;
@@ -69,10 +70,10 @@
 		padding-bottom: 0;
 		font-size: 1.5em;
 	}
-	.book-btn > button {
-		/* font-size: 1em; */
-	}
 	/*Packages fixes*/
+	.summary {
+		padding: 20px 10px;
+	}
 	.second > div {
 		width: 90%;
 		justify-self: center;
@@ -115,6 +116,7 @@
 		grid-auto-flow: row;
 		grid-template-columns: auto;
 		column-gap: unset;
+		padding: 20px;
 	}
 	/*Header fixes*/
 	.gradient {

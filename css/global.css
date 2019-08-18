@@ -1,6 +1,12 @@
 :root {
 	--slider-bg: #000000;
-	--darkgray: #666666;
+	/*Grays*/
+	--darkgray: #806666;
+	--lightgray: #666666;
+	/*.....*/
+	/*Blues*/
+	--font-blue: #32e0c9;
+	/*.....*/
 	--font-light: #ffffff;
 	--anchor-color: #407afc;
 	--packages-title-bg: rgba(125, 59, 136, .5);

@@ -44,7 +44,7 @@ function writePack(pack, mainBox) {
 				${pack.Description}
 			</p>
 			<div class="gradient-white">
-				<div id="expand">Show More</div>
+				<div class="btn-alt" id="expand">Show More</div>
 			</div>
 		`;
 		const btn = box.querySelector('#expand');
@@ -57,9 +57,9 @@ function writePack(pack, mainBox) {
 			}
 		});
 		const btnBox = document.createElement('div');
-		btnBox.className = "book-btn";
-		const btnBook = document.createElement('button');
-		btnBook.className = 'book';
+		btnBox.className = "itinerary-footer";
+		const btnBook = document.createElement('div');
+		btnBook.className = 'book btn';
 		btnBook.textContent = 'Book Now';
 		Object.keys(pack.include).map((key) => {
 			const arr = pack.include[key];

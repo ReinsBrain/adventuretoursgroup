@@ -11,6 +11,7 @@ body {
 	display: grid;
 	grid-template-columns: 1.5fr 1fr;
 	column-gap: 1em;
+	padding: 50px 150px;
 }
 
 .packages h3 {
@@ -48,9 +49,6 @@ body {
 .include-area {
 	padding: 20px;
 	border-left: 1px solid #f4a46047;
-	/* background-image: url(https://i.redd.it/gqnxmy5s5pb11.jpg); */
-	/* background-size: cover; */
-	/* opacity: 0.2; */
 	opacity: 1;
 	background-color: #f4a4609c;
 }
@@ -61,11 +59,14 @@ body {
 	max-height: 500px;
 }
 
+.summary > h3 {
+	color: var(--font-blue);
+}
+
 .summary > h3, .include-area > h3 {
 	font-size: 1.7em;
 	text-align: start;
 	padding-bottom: 1em;
-	/* font-family: "Roboto"; */
 	font-style: italic;
 	font-weight: 400;
 }
@@ -94,13 +95,6 @@ body {
 	align-self: end;
 	margin-bottom: 2em;
 	justify-self: center;
-	border: 1px solid sandybrown;
-	border-radius: 2px;
-	padding: 5px;
-	font-size: 1.3em;
-	color: sandybrown;
-	user-select: none;
-	cursor: pointer;
 }
 
 .gradient-white > div:hover {
@@ -150,23 +144,6 @@ body {
 	align-self: end;
 	margin-bottom: 1em;
 	justify-self: end;
-}
-
-.book-btn {
-	display: grid;
-}
-
-.book-btn > button {
-	margin: .5em auto 0 auto;
-	width: 153px;
-	font-size: 1.5em;
-	height: unset;
-	width: 8em;
-}
-
-.book-btn > button:hover {
-	background-color: #f97806;
-	border-color: #f97806;
 }
 
 .summary.expanded {
