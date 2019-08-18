@@ -31,7 +31,7 @@ body, html {
 	height: 7em;
 	position: absolute;
 	bottom: 0;
-	background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0,0.9) 40%);
+	/* background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0,0.9) 40%); */
 	width: 100%;
 	display:grid;
 	grid-auto-flow: column;
@@ -181,6 +181,15 @@ h1, h3 {
   animation-duration: .2s;
 }
 
+.slide-bg {
+    position: absolute;
+    top: 0;
+    bottom: 5px;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.2);
+}
+
 @-webkit-keyframes fade {
   from {opacity: .4} 
   to {opacity: 1}
@@ -226,15 +235,16 @@ h1, h3 {
 /* Caption text */
 .slidertext {
   color: #f2f2f2;
-  font-size: 40px;
+  font-size: 2.5em;
   padding: 8px 12px;
   position: absolute;
   top: 43%;
-  width: 100%;
+  width: 80%;
   text-align: center;
   font-weight: 300;
   box-sizing: border-box;
   z-index: 2;
+  left: 10%;
 }
 
 /* Number text (1/7 etc) */
@@ -316,19 +326,30 @@ h1, h3 {
 footer {
 	display: grid;
 	background-color: var(--darkgray);
-	grid-template-columns: 25% 25% 25% 25%;
+	grid-auto-flow: column;
 }
 
 .icons {
 	display: grid;
-	grid-template-columns: 50% 50%;
-	grid-column-start: 4;
+	grid-column-start: 3;
 	align-content: center;
+	grid-auto-flow: column;
+}
+
+
+.icons img {
+    width: 2em;
+}
+
+.icons > * {
+    place-self: center;
+    cursor: pointer;
 }
 
 footer > p {
-	text-align: center;
+	text-align: start;
 	color: var(--font-light);
+	padding-left: 10px;
 }
 
 @-webkit-keyframes move-bg {
@@ -360,12 +381,14 @@ footer > p {
 	animation-name: move-bg;
 	animation-duration: 30s;
 	animation-timing-function: linear;
+	box-shadow: inset 0px -3px 125px 94px;
 	animation-iteration-count: infinite;
 }
 
 .moving-background.init {
 	background: url('https://res.cloudinary.com/dlia7phdx/image/upload/v1564095631/ATG/atg-mp-big.jpg');
 	background-size: cover;
+	/* box-shadow: inset 0px -3px 125px 94px; */
 }
 
 .init .gradient {
