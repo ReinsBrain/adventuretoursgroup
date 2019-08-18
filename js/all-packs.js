@@ -19,7 +19,7 @@ function getAllPacks () {
 }
 
 function writePack (packs) {
-	const mainBox = document.querySelector('.second');
+	const mainBox = document.querySelector('.trending-packages');
 	packs.forEach(p => {
 		const itemDiv = document.createElement('div');
 		const id = p.title.toUpperCase().split(' ').join('-');

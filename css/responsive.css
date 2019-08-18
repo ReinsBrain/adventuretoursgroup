@@ -13,7 +13,7 @@
 	.first.init > .moving-background {
 		box-shadow: inset 14px 0px 150px 130px;
 	}
-	.second {
+	.trending-packages {
 		grid-template-rows: 1fr 1fr 1fr;
 		grid-template-columns: auto;
 		grid-gap: 50px;
@@ -75,11 +75,11 @@
 	.summary {
 		padding: 20px 10px;
 	}
-	.second > div {
+	.trending-packages > div {
 		width: 90%;
 		justify-self: center;
 	}
-	.second .text, .second .text li {
+	.trending-packages .text, .trending-packages .text li {
 		font-size: 1.6em;
 	}
 	.landpage #expand {
@@ -110,12 +110,12 @@
 				   and (max-device-width: 800px) 
 				   and (orientation: landscape) 
 {
-	.second {
+	.trending-packages {
 		grid-template-rows: 1fr 1fr 1fr;
 		grid-template-columns: auto;
 		grid-gap: 50px;
 	}
-	.second > *:not(.gradient-white) {
+	.trending-packages > *:not(.gradient-white) {
 		margin: 0 1em;
 	}
 	.book-btn > button {
@@ -136,7 +136,7 @@
 		font-size: 1.3em;
 	}
 	/*Packages fixes*/
-	.second > div {
+	.trending-packages > div {
 		width: 80%;
 		justify-self: center;
 	}

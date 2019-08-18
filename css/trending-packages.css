@@ -1,0 +1,43 @@
+/* trending-packages Section - Package Section and Read More. */
+.trending-packages {
+	background-color: ghostwhite;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	align-content: center;
+	/* grid-column-gap: 1em; */
+	grid-row-gap: 1em;
+}
+
+.trending-packages.init {
+	padding-top: 0;
+	margin-bottom: 1em;
+}
+
+.pack {
+	height: 300px;
+	width: auto;
+	/* margin: 0 10px 0 10px; */
+	background-repeat: no-repeat !important;
+	background-size: cover !important;
+	transition: all .2s ease-in-out;
+	cursor: pointer;
+}
+
+.pack:hover {
+	transform: scale(1.05) translate(0px, -11px);
+}
+
+.paracas {
+	background: url('https://res.cloudinary.com/dlia7phdx/image/upload/v1565989140/ATG/Packs/paracascolorful.jpg');
+}
+
+.machupicchu {
+	background: url('https://res.cloudinary.com/dlia7phdx/image/upload/v1565986844/ATG/Packs/acient_megaverga.jpg');
+	background-position: center;
+}
+
+.lima {
+	background: url('https://res.cloudinary.com/dlia7phdx/image/upload/v1565986897/ATG/Packs/1547657073-49899908-1958822330833343-3696327805026435072-ojpg.jpg');
+	background-position: bottom center;
+}
+/*----------------------------------------*/

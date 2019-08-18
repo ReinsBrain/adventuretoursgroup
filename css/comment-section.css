@@ -11,16 +11,6 @@
 	z-index: 1;
 }
 
-.comments .title, .pack-title {
-	text-align: left;
-	height: 80px;
-	font-size: 2.5em;
-	font-weight: 400;
-	font-style: italic;
-	color: var(--font-blue);
-	z-index: 1000;
-}
-
 .comments > .people {
 	display: grid;
 	grid-auto-flow: column;
