@@ -85,6 +85,10 @@
 		width: 300px;
 		padding: 10px;
 	}
+	.icons img {
+		width: 5em;
+		height: auto;
+	}
 }
 
 @media only screen and (min-device-width: 300px) 
