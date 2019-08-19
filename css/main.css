@@ -331,3 +331,8 @@ footer > p {
 	text-align: center;
 	margin-bottom: 1em;
 }
+
+.main-page .btn-alt {
+	font-size: 1.8em !important;
+	padding: 5px 20px !important;
+}
