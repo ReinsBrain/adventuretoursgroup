@@ -14,7 +14,7 @@ and (max-device-width: 800px)
 		/* font-size: 2.5em !important; */
 	}
 	.title > div {
-		width: 50%;
+		/* width: 50%; */
 		font-size: 20px;
 	}
 	.first {
