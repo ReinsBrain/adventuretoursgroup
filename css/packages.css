@@ -144,6 +144,7 @@ body {
 .itinerary-item {padding-left: 10px;}
 
 .include-area {
+	align-self: start;
 	position: relative;
 	margin: 10px;
 	border-radius: 6px;
