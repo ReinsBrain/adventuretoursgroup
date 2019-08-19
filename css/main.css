@@ -137,7 +137,7 @@ section {
   position: relative;
   margin: auto;
   width: 90%;
-  max-height: 338px;
+  /* max-height: 338px; */
   overflow: hidden;
 }
 
@@ -170,6 +170,12 @@ section {
 /* Hide the images by default */
 .mySlides {
   display: none;
+  height: 352px;
+  background-color: var(--slider-bg);
+}
+
+.mySlides.fade.active > img {
+	height: 100%;
 }
 
 /* Next & previous buttons */

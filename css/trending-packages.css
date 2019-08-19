@@ -12,7 +12,7 @@
 }
 
 .trending-packages.all {
-	margin: 1em 5em;
+	margin: 2em 5em;
 }
 
 .trending-packages.init {
@@ -25,10 +25,10 @@
 	padding: 0 0 5px 0;
 	border-radius: 2px;
 	box-shadow: 0 0 2px rgba(0,0,0,.2);
-	max-width: 350px;
 	overflow: hidden;
 	min-width: 350px;
 	justify-self: center;
+	width: 100%;
 }
 
 .trending-packages > *:not(.gradient-white):hover {
@@ -73,7 +73,7 @@
 }
 
 .paracas {
-	background: url('https://res.cloudinary.com/dlia7phdx/image/upload/v1565989140/ATG/Packs/paracascolorful.jpg');
+	background: url('https://res.cloudinary.com/dlia7phdx/image/upload/v1565986844/ATG/Packs/28177605.jpg');
 }
 
 .machupicchu {
