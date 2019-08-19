@@ -4,7 +4,6 @@
 	position: relative;
 	background-position: center;
 	align-content: center;
-	text-align: -webkit-center;
 	font-weight: 300;
 	padding: 50px 150px;
 	color: #666;
@@ -68,7 +67,12 @@
 	font-size: 1.1em;
 }
 
-.comments p {
+.comments .text-bubbles p {
+	margin: 0;
+	text-align: center;
+}
+
+.comments .text-bubbles {
 	font-style: italic;
 	border-radius: 10px;
 	color: var(--slider-bg);
@@ -77,7 +81,13 @@
 	box-shadow: 6px 6px 11px -4px rgba(0,0,0,0.75);
 	border-top-left-radius: 0;
 	margin-top: 5px;
+	width: fit-content
 }
+
+.comments .text-bubbles:not(:last-child) {
+	margin-bottom: 10px;
+}
+
 .stars {
 	display: grid;
 	grid-auto-flow: column;
@@ -110,6 +120,9 @@
 	}
 	.comments .title {
 		text-align: center;
+	}
+	.comments .text-bubbles {
+		width: auto;
 	}
 }
 
