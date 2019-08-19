@@ -126,7 +126,9 @@
 	}
 }
 
-@media only screen and (orientation: landscape) 
+@media only screen 
+	and (max-device-width: 1080px)
+	and (orientation: landscape) 
 {
 	.comments > .people {
 		grid-template-columns: none;

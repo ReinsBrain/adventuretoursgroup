@@ -129,7 +129,9 @@ and (max-device-width: 800px)
 	}
 }
 
-@media only screen and (orientation: landscape) 
+@media only screen 
+	and (max-device-width: 1080px)
+	and (orientation: landscape) 
 {
 	.trending-packages {
 		/* grid-template-rows: 1fr 1fr 1fr; */
