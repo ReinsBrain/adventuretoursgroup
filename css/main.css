@@ -106,33 +106,6 @@ section {
 	padding: 10px;
 }
 
-.text {
-	display: grid;
-	margin-top: 1em;
-	padding-left: 10px;
-	padding-right: 10px;
-}
-
-.text > ul {
-	font-size: 16px;
-	text-align: start;
-	list-style-type: none;
-	list-style-image: url('./icons/star-solid.svg');
-	padding-left: 20px;
-	padding-right: 20px;
-}
-
-.text > ul > li {
-	margin: 5px 0;
-	font-size: 1em;
-}
-
-.text > a {
-	text-align: start;
-	font-size: 1.2em;
-	border-bottom: 1px solid var(--darkgray);
-}
-
 .read-more {
 	align-self: center;
 	justify-self: right;
