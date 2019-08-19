@@ -13,6 +13,10 @@ and (max-device-width: 800px)
 				   and (max-device-width: 800px) 
 				   and (orientation: portrait) 
 				{
+	.slider-bg {
+		visibility: hidden;
+		display: none;
+	}
 	.first {
 		background-size: cover;
 		background-position: center;
@@ -163,6 +167,13 @@ and (max-device-width: 800px)
 	}
 	.moving-background {
 		box-shadow: inset 12px 0px 64px 50px;
+	}
+	.slideshow-container {
+		width: 100%;
+		height: auto;
+	}
+	.slideshow-container .mySlides.fade.active {
+		height: auto;
 	}
 }
 
