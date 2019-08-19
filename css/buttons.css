@@ -37,6 +37,20 @@
 	padding: 5px;
 }
 
+.btn-big {
+	align-self: center;
+	justify-self: center;
+	font-size: 1.5em;
+	font-style: italic;
+	padding: 5px 20px;
+	border: 1px solid var(--font-light);
+	border-radius: 10px;
+	background-color: rgba(0,0,0,0.5);
+	cursor: pointer;
+	user-select: none;
+	font-weight: 300;
+}
+
 @media only screen and (min-device-width: 300px) 
 				   and (max-device-width: 800px) 
 				   and (orientation: landscape) 

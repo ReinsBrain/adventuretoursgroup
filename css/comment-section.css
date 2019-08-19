@@ -113,6 +113,12 @@
 				   and (max-device-width: 800px) 
 				   and (orientation: portrait) 
 				{
+	.comments .people > div:not(:last-child) {
+		margin-bottom: 40px;
+	}
+	.comments .person img {
+		width: 150px;
+	}
 	.comments > .people {
 		grid-template-columns: none;
 		grid-column-gap: unset;
