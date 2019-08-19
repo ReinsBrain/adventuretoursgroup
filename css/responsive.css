@@ -2,6 +2,9 @@
 				   and (max-device-width: 800px) 
 				   and (orientation: portrait) 
 				{
+	.main-page .btn-alt {
+		font-size: 2.5em !important;
+	}
 	.title > div {
 		width: 50%;
 	}
