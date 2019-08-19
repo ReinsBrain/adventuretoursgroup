@@ -210,7 +210,7 @@ section {
 /* Caption text */
 .slidertext {
   color: #f2f2f2;
-  /* font-size: 2.5em; */
+  font-size: 1.5em;
   padding: 8px 12px;
   position: absolute;
   top: 43%;
@@ -236,6 +236,7 @@ section {
 .mySlides.fade.active {
     display: block;
     opacity: 1;
+    height: auto;
 }
 
 /* Forth (Spacing) Section - Just a few pixels between the Slider and the Comment section. */
