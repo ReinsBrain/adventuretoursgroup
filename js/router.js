@@ -2,6 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	const allPacks = document.querySelector('#expand');
 	const cardArr = document.querySelectorAll('.trending-packages > *:not(.gradient-white)');
 	const home = document.querySelector('.logo.fadein');
+	const planBtn = document.querySelector('.btn-big');
 	if (allPacks !== null) {
 		allPacks.addEventListener('click', () => {
 			document.location.href = '/all/';
@@ -18,5 +19,12 @@ document.addEventListener('DOMContentLoaded', () => {
 	}
 	home.addEventListener('click', () => {
 		document.location.href = '/';
-	})
+	});
+	if (planBtn !== null) {
+		planBtn.addEventListener('click', () => {
+			document.querySelector('#trending-section').scrollIntoView({
+				behavior: "smooth",
+			});
+		})
+	}
 });
