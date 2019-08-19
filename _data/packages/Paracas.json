@@ -34,6 +34,7 @@
 	{
 		"title": "Exclusive 3 Day VIP Intimar Experience",
 		"tags": ["rest&relax", "romance", "cuisine", "farm", "hotel"],
+		"bestSeller": true,
 		"imgs": [
 			"https://res.cloudinary.com/dlia7phdx/image/upload/v1565986844/ATG/Packs/28177605.jpg"
 		],

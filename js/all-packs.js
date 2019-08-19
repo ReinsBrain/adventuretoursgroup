@@ -27,13 +27,20 @@ function writePack (packs) {
 		itemDiv.innerHTML = `
 			<div class="pack" id="${ id }" style="background: url(${ img })">
 			</div>
-			<div class=text>
-				<a>${ p.title }</a>
-				<ul>
-					<li>${ p.include['Day 1'][0] }</li>
-					<li>${ p.include['Day 1'][1] }</li>
-					<li>${ p.include['Day 1'][2] }</li>
-				</ul>
+			<div class="package-details">
+				<div class="package-title">${ p.title }</div>
+				<div class="duration">
+					<img src="../css/icons/clock-regular.svg" />
+					<div>Duration: ${ Object.keys(p.include).length } days</div>
+				</div>
+				<div class="bestseller ${ p.bestSeller ? '' : 'hidden' }">
+					<img src="../css/icons/crown-solid.svg" alt="">
+					<div>bestseller</div>
+				</div>
+				<div class="reviews">
+					<div class="stars"><div></div><div></div><div></div><div></div><div></div></div>
+					<div>1M Reviews</div>
+				</div>
 			</div>
 		`
 		mainBox.appendChild(itemDiv);

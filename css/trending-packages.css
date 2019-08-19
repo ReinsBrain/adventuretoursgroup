@@ -60,12 +60,12 @@
 
 .package-details .duration, .package-details .bestseller {
 	display: grid;
-	grid-template-columns: 15px auto 1fr;
+	grid-template-columns: auto auto 1fr;
 	column-gap: 5px;
 }
 
 .package-details img {
-	width: 15px;
+	width: 1em;
 	align-self: center;
 }
 

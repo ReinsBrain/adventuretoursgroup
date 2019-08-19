@@ -33,6 +33,7 @@
 			"https://res.cloudinary.com/dlia7phdx/image/upload/v1565986844/ATG/Packs/acient_megaverga.jpg"
 		],
 		"tags": ["rest&relax"],
+		"bestSeller": true,
 		"include": {
 			"Day 1": [
 				"Airport pickup",

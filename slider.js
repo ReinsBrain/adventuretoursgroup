@@ -1,14 +1,14 @@
 document.addEventListener('DOMContentLoaded', () => { 
 	var slideIndex = 0;
 	showSlides(slideIndex);
-	/*setInterval(() => {
+	setInterval(() => {
 		if (slideIndex < 6) {
 			slideIndex++
 		} else {
 			slideIndex = 0;
 		}
 		showSlides(slideIndex);
-	}, 10000);*/
+	}, 10000);
 	const Next = document.querySelector('.next');
 	// next btn
 	Next.addEventListener('click', () => {

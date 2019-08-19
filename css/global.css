@@ -15,3 +15,21 @@
 	--packages-title-bg: rgba(125, 59, 136, .5);
 	--packages-bg: #0252af;
 }
+
+.stars {
+	display: grid;
+	grid-auto-flow: column;
+	grid-template-columns: repeat(5, 15px);
+	margin: 0;
+	left: 0;
+	column-gap: 5px;
+}
+.stars > div {
+	height: 15px;
+	justify-self: stretch;
+	align-self: stretch;
+	content: "";
+	background-image: url('./icons/star-solid.svg');
+	background-repeat: no-repeat;
+}
+

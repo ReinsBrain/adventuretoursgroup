@@ -346,3 +346,7 @@ footer > p {
 	background-color: var(--slider-bg);
 	padding: 2em 0;
 }
+
+.bestseller.hidden {
+	opacity: 0;
+}

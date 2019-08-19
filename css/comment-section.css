@@ -88,23 +88,6 @@
 	margin-bottom: 10px;
 }
 
-.stars {
-	display: grid;
-	grid-auto-flow: column;
-	grid-template-columns: repeat(5, 15px);
-	margin: 0;
-	left: 0;
-	column-gap: 5px;
-}
-.stars > div {
-	height: 15px;
-	justify-self: stretch;
-	align-self: stretch;
-	content: "";
-	background-image: url('./icons/star-solid.svg');
-	background-repeat: no-repeat;
-}
-
 
 .pack-title {
 	padding-top: 1em;
