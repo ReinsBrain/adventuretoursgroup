@@ -11,16 +11,6 @@
 	z-index: 1;
 }
 
-.comments .title, .pack-title {
-	text-align: left;
-	height: 80px;
-	font-size: 1.7em;
-	font-weight: 400;
-	font-style: italic;
-	color: var(--font-blue);
-	z-index: 1000;
-}
-
 .comments > .people {
 	display: grid;
 	grid-auto-flow: column;
@@ -51,6 +41,7 @@
 	min-height: 60px;
 	display: grid;
 	grid-template-columns: 1fr 2fr;
+	column-gap: 10px;
 }
 
 .comments .person {
@@ -66,10 +57,15 @@
 	border-radius: 50%;
 }
 
-.comments .person-name {
-	font-size: 1.1em;
-	margin-bottom: 5px;
+.comments .person-details > div {
+	font-size: .8em;
 	align-self: end;
+	margin-bottom: 5px;
+	text-align: left;
+}
+
+.comments .person-details > div:first-child {
+	font-size: 1.1em;
 }
 
 .comments p {
@@ -83,15 +79,19 @@
 	margin-top: 5px;
 }
 .stars {
-	width: 50%;
 	display: grid;
 	grid-auto-flow: column;
+	grid-template-columns: repeat(5, 15px);
+	margin: 0;
+	left: 0;
+	column-gap: 5px;
 }
 .stars > div {
+	height: 15px;
+	justify-self: stretch;
+	align-self: stretch;
 	content: "";
 	background-image: url('./icons/star-solid.svg');
-	width: 15px;
-	height: 15px;
 	background-repeat: no-repeat;
 }
 
@@ -110,7 +110,6 @@
 	}
 	.comments .title {
 		text-align: center;
-		font-size: 2.5em;
 	}
 }
 

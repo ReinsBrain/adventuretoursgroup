@@ -13,7 +13,7 @@
 	.first.init > .moving-background {
 		box-shadow: inset 14px 0px 150px 130px;
 	}
-	.second {
+	.trending-packages {
 		grid-template-rows: 1fr 1fr 1fr;
 		grid-template-columns: auto;
 		grid-gap: 50px;
@@ -76,11 +76,12 @@
 	.summary {
 		padding: 20px 10px;
 	}
-	.second > div {
-		width: 90%;
+	.trending-packages > div {
+		width: 100%;
 		justify-self: center;
+		max-width: unset !important;
 	}
-	.second .text, .second .text li {
+	.trending-packages .text, .trending-packages .text li {
 		font-size: 1.6em;
 	}
 	.landpage #expand {
@@ -105,18 +106,26 @@
 	.pack-title {
 		font-size: 2.5em !important;
 	}
+	.trending-packages {
+		/* grid-template-rows: 1fr 1fr 1fr; */
+		grid-template-columns: auto;
+		grid-template-columns: unset !important;
+		grid-gap: 50px;
+	}
 }
 
 @media only screen and (min-device-width: 300px) 
 				   and (max-device-width: 800px) 
 				   and (orientation: landscape) 
 {
-	.second {
-		grid-template-rows: 1fr 1fr 1fr;
-		grid-template-columns: auto;
+	.trending-packages {
+		/* grid-template-rows: 1fr 1fr 1fr; */
+		/* grid-template-columns: auto; */
+		grid-auto-flow: row;
 		grid-gap: 50px;
+		grid-template-columns: unset !important;
 	}
-	.second > *:not(.gradient-white) {
+	.trending-packages > *:not(.gradient-white) {
 		margin: 0 1em;
 	}
 	.book-btn > button {
@@ -137,7 +146,7 @@
 		font-size: 1.3em;
 	}
 	/*Packages fixes*/
-	.second > div {
+	.trending-packages > div {
 		width: 80%;
 		justify-self: center;
 	}

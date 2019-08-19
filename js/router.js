@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => { 
 	const allPacks = document.querySelector('#expand');
-	const cardArr = document.querySelectorAll('.second > *:not(.gradient-white)');
+	const cardArr = document.querySelectorAll('.trending-packages > *:not(.gradient-white)');
 	const home = document.querySelector('.logo.fadein');
 	if (allPacks !== null) {
 		allPacks.addEventListener('click', () => {
