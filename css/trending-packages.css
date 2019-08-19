@@ -4,11 +4,15 @@
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	align-content: center;
-	/* grid-column-gap: 1em; */
+	grid-column-gap: 1em;
 	grid-row-gap: 1.5em;
 	margin: 1em 0;
 	cursor: pointer;
 	user-select: none;
+}
+
+.trending-packages.all {
+	margin: 1em 5em;
 }
 
 .trending-packages.init {
