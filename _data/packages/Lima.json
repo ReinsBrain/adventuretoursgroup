@@ -2,6 +2,7 @@
 	{
 		"title": "Miraflores Spa R&R Pack",
 		"tags": ["rest&relax"],
+		"reviews": "650k",
 		"imgs": [
 			"https://res.cloudinary.com/dlia7phdx/image/upload/v1565986844/ATG/Packs/miraflores.jpg",
 			"https://res.cloudinary.com/dlia7phdx/image/upload/v1565988643/ATG/Packs/miraflores-thumb.jpg"
@@ -30,6 +31,7 @@
 	{
 		"title": "Barranco Gastro Pack",
 		"tags": ["rest&relax"],
+		"reviews":"920k",
 		"bestSeller": true,
 		"imgs": [
 			"https://res.cloudinary.com/dlia7phdx/image/upload/v1565986897/ATG/Packs/1547657073-49899908-1958822330833343-3696327805026435072-ojpg.jpg"

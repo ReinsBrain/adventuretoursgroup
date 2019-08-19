@@ -39,7 +39,7 @@ function writePack (packs) {
 				</div>
 				<div class="reviews">
 					<div class="stars"><div></div><div></div><div></div><div></div><div></div></div>
-					<div>1M Reviews</div>
+					<div>${ p.reviews } Reviews</div>
 				</div>
 			</div>
 		`
