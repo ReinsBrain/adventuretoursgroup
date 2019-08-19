@@ -137,7 +137,6 @@ section {
   position: relative;
   margin: auto;
   width: 90%;
-  margin-bottom: 4em;
   max-height: 338px;
   overflow: hidden;
 }
@@ -335,4 +334,9 @@ footer > p {
 .main-page .btn-alt {
 	font-size: 1.8em !important;
 	padding: 5px 20px !important;
+}
+
+.slider-bg {
+	background-color: var(--slider-bg);
+	padding: 2em 0;
 }
