@@ -2,6 +2,9 @@
 				   and (max-device-width: 800px) 
 				   and (orientation: portrait) 
 				{
+	.title > div {
+		width: 50%;
+	}
 	.first {
 		background-size: cover;
 		background-position: center;
