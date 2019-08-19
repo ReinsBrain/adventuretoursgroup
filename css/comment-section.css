@@ -99,7 +99,7 @@
 				   and (max-device-width: 800px)
 				{
 	.comments {
-		padding: 2em;
+		padding: 10px;
 	}
 	.comments .title {
 		text-align: center;

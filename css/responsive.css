@@ -11,10 +11,11 @@ and (max-device-width: 800px)
 				   and (orientation: portrait) 
 				{
 	.main-page .btn-alt {
-		font-size: 2.5em !important;
+		/* font-size: 2.5em !important; */
 	}
 	.title > div {
 		width: 50%;
+		font-size: 20px;
 	}
 	.first {
 		background-size: cover;
@@ -25,7 +26,7 @@ and (max-device-width: 800px)
 		box-shadow: inset 12px 0px 64px 50px;
 	}
 	.first.init > .moving-background {
-		box-shadow: inset 14px 0px 150px 130px;
+		/* box-shadow: inset 14px 0px 150px 130px; */
 	}
 	.trending-packages {
 		grid-template-rows: 1fr 1fr 1fr;
@@ -63,7 +64,7 @@ and (max-device-width: 800px)
 	}
 	.init .gradient > h1 {
 		align-self: end;
-		font-size: 3em;
+		/* font-size: 3em; */
 	}
 	.init .gradient > button {
 		align-self: start;
@@ -99,11 +100,11 @@ and (max-device-width: 800px)
 	}
 	.landpage #expand {
 		font-size: 30px;
-		width: 300px;
+		/* width: 300px; */
 		padding: 10px;
 	}
 	footer.init > .icons img {
-		width: 3.5em;
+		/* width: 3.5em; */
 		height: auto;
 	}
 	.slideshow-container {
@@ -114,7 +115,7 @@ and (max-device-width: 800px)
 		height: 345px;
 	}
 	.prev, .next {
-		font-size: 2.5em;
+		/* font-size: 2.5em; */
 	}
 	.pack-title {
 		font-size: 2.5em !important;
@@ -127,7 +128,7 @@ and (max-device-width: 800px)
 		margin: 1em 0!important;
 	}
 	.icons.init {
-		width: 22em;
+		/* width: 22em; */
 	}
 }
 
