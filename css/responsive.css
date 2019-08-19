@@ -28,8 +28,6 @@
 	.pack {
 		height: 400px;
 		width: auto;
-		margin: 0 10px 0 10px;
-		background-repeat: no-repeat !important;
 		background-size: cover !important;
 		border-radius: 3px;
 		background-position: bottom center;
@@ -83,6 +81,7 @@
 		width: 100%;
 		justify-self: center;
 		max-width: unset !important;
+		min-width: unset !important;
 	}
 	.trending-packages .text, .trending-packages .text li {
 		font-size: 1.6em;
@@ -113,7 +112,7 @@
 		/* grid-template-rows: 1fr 1fr 1fr; */
 		grid-template-columns: auto;
 		grid-template-columns: unset !important;
-		grid-gap: 50px;
+		padding: 0 15px;
 	}
 }
 
