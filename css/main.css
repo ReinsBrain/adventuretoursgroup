@@ -258,6 +258,8 @@ footer {
 	/* grid-column-start: 3; */
 	align-content: center;
 	grid-auto-flow: column;
+	width: 200px;
+	justify-self: end;
 }
 
 

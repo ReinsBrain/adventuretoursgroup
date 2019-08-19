@@ -126,6 +126,9 @@ and (max-device-width: 800px)
 		padding: 0 15px;
 		margin: 1em 0!important;
 	}
+	.icons {
+		width: 22em;
+	}
 }
 
 @media only screen and (min-device-width: 300px) 
