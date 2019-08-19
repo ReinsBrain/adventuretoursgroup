@@ -110,15 +110,15 @@
 				   and (orientation: portrait) 
 {
 	.package-details > .package-title {
-		font-size: 2.5em;
+		font-size: 24px;
 	}
 	.package-details * {
-		font-size: 1.5em;
+		font-size: 18px;
 	}
 	.reviews .stars {
-		grid-template-columns: repeat(5, 30px);
+		grid-template-columns: repeat(5, 20px);
 	}
 	.reviews .stars div {
-		height: 30px;
+		height: 20px;
 	}
 }
