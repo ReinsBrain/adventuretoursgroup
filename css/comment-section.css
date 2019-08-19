@@ -117,7 +117,7 @@
 		margin-bottom: 40px;
 	}
 	.comments .person img {
-		width: 150px;
+		width: 100px;
 	}
 	.comments > .people {
 		grid-template-columns: none;

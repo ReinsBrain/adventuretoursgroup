@@ -5,18 +5,14 @@ and (max-device-width: 800px)
 	.citation {
 		visibility: hidden;
 	}
+	.title > div {
+		font-size: 24px;
+	}
 }
 @media only screen and (min-device-width: 300px) 
 				   and (max-device-width: 800px) 
 				   and (orientation: portrait) 
 				{
-	.main-page .btn-alt {
-		/* font-size: 2.5em !important; */
-	}
-	.title > div {
-		/* width: 50%; */
-		font-size: 20px;
-	}
 	.first {
 		background-size: cover;
 		background-position: center;
@@ -24,9 +20,6 @@ and (max-device-width: 800px)
 	}
 	.moving-background {
 		box-shadow: inset 12px 0px 64px 50px;
-	}
-	.first.init > .moving-background {
-		/* box-shadow: inset 14px 0px 150px 130px; */
 	}
 	.trending-packages {
 		grid-template-rows: 1fr 1fr 1fr;
