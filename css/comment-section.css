@@ -71,8 +71,8 @@
 .comments p {
 	font-style: italic;
 	border-radius: 10px;
-	color: ghostwhite;
-	background-color: rgba(0,0,0,0.3);
+	color: var(--slider-bg);
+	background-color: var(--light-orange);
 	padding: 5px 6px;
 	box-shadow: 6px 6px 11px -4px rgba(0,0,0,0.75);
 	border-top-left-radius: 0;
