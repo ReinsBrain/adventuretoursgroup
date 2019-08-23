@@ -8,17 +8,17 @@
 		],
 		"include": {
 			"Day 1": [
-				"Airport pickup",
-				"Drive to Hidrolitica",
-				"Lunch",
-				"Train ride to Aguas Calientes",
-				"Dinner"
+				"(10am) Airport pickup",
+				"(103:0am) Drive to Hidrolitica",
+				"(12pm) Lunch",
+				"(1pm) Train ride to Aguas Calientes",
+				"(6pm) Dinner"
 			],
 			"Day 2": [
-				"Breakfast",
-				"Machu Picchu experience",
-				"Lunch",
-				"Departure to airport"
+				"(7am) Breakfast",
+				"(9am) Machu Picchu experience",
+				"(1pm) Lunch",
+				"(3pm) Departure to airport"
 			]
 		},
 		"Additional": [
@@ -38,23 +38,24 @@
 		"bestSeller": true,
 		"include": {
 			"Day 1": [
-				"Airport pickup",
-				"Hotel drop off",
-				"Lunch  at Yaku",
-				"Trip and Tour of Saqsaywaman",
-				"Ride back to the Hotel",
-				"Dinner at Uchu Peruvian Steakhouse"
+				"(10am) Airport pickup",
+				"(11am) Hotel drop off",
+				"(12pm) Lunch  at Yaku",
+				"(2pm) Trip and Tour of Saqsaywaman",
+				"(5pm) Ride back to the Hotel",
+				"(7pm) Dinner at Uchu Peruvian Steakhouse "
 			],
 			"Day 2": [
-				"Breakfast at hotel",
-				"12 sided stone",
-				"Lunch at Morena Peruvian Kitchen",
-				"Q’ uenco complex",
-				"Dinner at chicha por Gaston Acurio"
+				"(9am) Breakfast at hotel",
+				"(1030am) 12 sided stone",
+				"(12pm) Lunch at Morena Peruvian Kitchen",
+				"(2pm) Q’ uenco complex",
+				"(6pm) Dinner at chicha por Gaston Acurio"
 			],
 			"Day 3": [
-				"Breakfast",
-				"Drop off at airport"
+				"(8am) Breakfast",
+				"(9am) Qorikancha",
+				"(11:30am) Drop off at airport"
 			]
 		},
 		"Additional": [
@@ -74,17 +75,18 @@
 		"reviews": "560K",
 		"include": {
 			"Day 1": [
-				"Airport pickup",
-				"Hotel drop off",
-				"Lunch at Uchu Peruvian Steakhouse",
-				"Plaza de Armas tour",
-				"Dinner at Kusikuy Restaurante",
-				"Emoliente"
+				"(9am) Airport pickup",
+				"(10am) Hotel dropoff",
+				"(12pm) Lunch at Uchu Peruvian Steakhouse",
+				"(3pm) Ant snack",
+				"(4pm) Plaza de Armas tour",
+				"(6pm) Dinner at Kusikuy Restaurante",
+				"(8pm) Emoliente"
 			],
 			"Day 2": [
-				"Tour of market",
-				"Breakfast",
-				"Drop off at local hotel or airport"
+				"(8am) Tour of market",
+				"(9am) Breakfast",
+				"(10am) Drop off at local hotel or airport"
 			]
 		},
 		"Additional": [

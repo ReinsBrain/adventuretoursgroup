@@ -9,31 +9,31 @@
 		],
 		"include": {
 			"Day 1": [
-				"Pickup in Arequipa",
-				"Lunch at Sach’a Restaurante Peruano",
-				"Drive to Colca Canyon (3-3.5 hrs)",
-				"Trek",
-				"Condor lookout",
-				"Check in Belmond Las Casitas",
-				"Spa (massage & steam)",
-				"Dinner at hotel restaurant"
+				"(11am) Pickup in Arequipa",
+				"(12pm) Lunch at Sach’a Restaurante Peruano",
+				"(1pm) Drive to Colca Canyon (3-3.5 hrs)",
+				"(4pm) Trek",
+				"(4:30pm) Condor lookout",
+				"(5:30pm) Check in Belmond Las Casitas",
+				"(6pm) Spa (massage & steam)",
+				"(7pm) Dinner at hotel restaurant"
 			],
 			"Day 2": [
-				"Breakfast at Hotel buffet",
-				"Trek out of Colca Canyon",
-				"Ride back to Arequipa",
-				"Check in at Los Tambos",
-				"Lunch in Hotel restaurant",
-				"La Calera hot springs",
-				"Dinner Sol de Mayo"
+				"(8am) Breakfast at Hotel buffet",
+				"(9am)Trek out of Colca Canyon",
+				"(10am) Ride back to Arequipa",
+				"(1pm) Check in at Los Tambos",
+				"(2pm) Lunch in Hotel restaurant",
+				"(4pm) La Calera hot springs",
+				"(7pm) Dinner Sol de Mayo"
 			],
 			"Day 3": [
-				"Breakfast at Hotel Restaurant",
-				"Drive to Misti Volcano",
-				"Ascend the Volcano",
-				"Picnic lunch on Volcano",
-				"Descend the Volcano",
-				"Hotel checkout"
+				"(8am) Breakfast at Hotel Restaurant",
+				"(9am) Drive to Misti Volcano",
+				"(10am) Ascend the Volcano",
+				"(12pm)Picnic lunch on Volcano",
+				"(1pm) Descend the Volcano",
+				"(3:30pm) Hotel checkout"
 			]
 		},
 		"Additional": [
@@ -53,18 +53,18 @@
 		],
 		"include": {
 			"Day 1": [
-				"Pickup",
-				"Drop off at Casa Andina Premium with complimentary bottle of wine",
-				"Hatunpa (lunch)",
-				"Museo Santuarios Andinos",
-				"Church tour",
-				"El Fuego de San Antonio restaurant (dinner)"
+				"(11am) Pickup",
+				"(11:30am) Drop off at Casa Andina Premium with complimentary bottle of wine",
+				"(12pm) Hatunpa (lunch)",
+				"(1pm) Museo Santuarios Andinos",
+				"(4pm) Church tour",
+				"(6pm) El Fuego de San Antonio restaurant (dinner)"
 			],
 			"Day 2": [
-				"Los Robles (breakfast)",
-				"Colca Canyon",
-				"Casta Fior (late lunch/early dinner)",
-				"Airport drop offs"
+				"(8am) Los Robles (breakfast)",
+				"(10am) Colca Canyon",
+				"(2pm)Casta Fior (late lunch/early dinner)",
+				"(4pm) Airport drop offs"
 			]
 		},
 		"Additional": [

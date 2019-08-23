@@ -8,20 +8,23 @@
 		],
 		"include": {
 			"Day 1": [
-				"Guided tour Vinas Queirolo with wine and pisco tasting",
-				"Lunch at Vinas Queirolo",
-				"Transfer to DM Hotel",
-				"Check-in DM Hotel",
-				"Relaxing spa/pool time at Hotel",
-				"Sunset on the dunes ( private dune buggy ride )",
-				"Dinner at El Coral",
-				"Free Peruvian Chilcano at X Bar"
+				"(11am) Pickup",
+				"(12pm) Guided tour Vinas Queirolo with wine and pisco tasting", 
+				"(1pm) Lunch at Vinas Queirolo",
+				"(2pm) Transfer to DM Hotel",
+				"(2:30pm) Check-in DM Hotel",
+				"(3pm) Relaxing spa/pool time at Hotel",
+				"(5pm) Sunset on the dunes ( private dune buggy ride )",
+				"(7pm) Dinner at El Coral",
+				"(9pm) Free Peruvian Chilcano at X Bar"
 			],
 			"Day 2": [
-				"Continental Breakfast",
-				"Lagoon boat ride",
-				"Check-out",
-				"Transfer"
+				"(8am) Continental",
+				"(9am) Lagoon boat ride",
+				"(10am) Check-out",
+				"(10:30am) Transfer to the airport in Ica",
+				"(11am) Flight over the Nazca Lines",
+				"(12pm) Drop off"
 			]
 		},
 		"Additional": [
@@ -42,21 +45,22 @@
 		],
 		"include": {
 			"Day 1": [
-				"Islas Ballestas VIP tour",
-				"Champagne brunch (at intimar)",
-				"Catamaran",
-				"Dinner (at intimar)",
-				"Lodging (at intimar)"
+				"(10am) Pickup",
+				"(10:30am) Islas Ballestas VIP tour",
+				"(12pm) Champagne brunch/ Check in (at intimar)",
+				"(3pm) Catamaran", 
+				"(6pm) Dinner at intimar"
 			],
 			"Day 2": [
-				"breakfast",
-				"Catamaran ride to sequion",
-				"Snorkel fish your own scallops for lunch",
-				"VIP dinner at Restaurant Paracas with pickup/dropoff"
+				"(9am) Breakfast at Restaurante Ballestas",
+				"(10:30am) Catamaran ride to sequion",
+				"(12pm) Snorkel fish your own scallops for lunch",
+				"(7pm) VIP dinner at Restaurant Paracas with pickup/dropoff"
 			],
 			"Day 3": [
-				"breakfast",
-				"Morning tour of Paracas Reserve"
+				"(9am) Breakfast",
+				"(11am) Morning tour of Paracas Reserve",
+				"(1pm) Drop off"
 			]
 		},
 		"Additional": [
@@ -77,19 +81,19 @@
 		"reviews":"980K",
 		"include": {
 			"Day 1": [
-				"Luggage transfer to Intimar",
-				"Islas Ballestas VIP yacht tour",
-				"Dropoff by yacht to Intimar",
-				"Check-in at Intimar",
-				"Snorkel and catch your scallions",
-				"Champagne brunch (at intimar)",
-				"Catamaran cruise bahia de Paracas and Sequion",
-				"Dinner (at intimar)"
+				"(9am) Pick up in Paracas",
+				"(9:30am) Islas Ballestas VIP yacht tour",
+				"(11am) Dropoff by yacht to Intimar",
+				"(12pm) Champagne Brunch",
+				"(3pm) Catamaran cruise bahia de Paracas and Sequion",
+				"(5pm) Snorkel and catch your scallops",
+				"(6pm) Dinner (at intimar)"
 			],
 			"Day 2": [
-				"Continental breakfast",
-				"Late morning tour of Paracas Reserve",
-				"Choice of Restaurant for Lunch"
+				"(9am) Breakfast at Restaurante Ballestas",
+				"(10am) Checkout at Intimar",
+				"(10:30am) Paracas Reserve Tour",
+				"(1pm) Choice of Restaurant for Lunch"
 			]
 		},
 		"Additional": [

@@ -9,22 +9,23 @@
 		"reviews": "206K",
 		"include": {
 			"Day 1": [
-				"Airport pickup",
-				"Check-in at Hotel",
-				"Dinner"
+				"(2pm) Airport pickup",
+				"(3pm) Check-in at DM Hoteles",
+				"(4pm) Fabrica de Chocolates Orquidea",
+				"(6pm) Dinner at De la Vaca"
 			],
 			"Day 2": [
-				"Breakfast",
-				"Waterfall visit",
-				"Lunch",
-				"Tambo illusion",
-				"La Alternativa",
-				"Dinner at Natural"
+				"(8am) Breakfast at Hotel",
+				"(10am) Blue lagoon and Waterfall visit",
+				"(1pm) Lunch at La Collpa",
+				"(3pm) Tambo Illusion",
+				"(6pm) La Alternativa",
+				"(7pm) Dinner at Natural"
 			],
 			"Day 3": [
-				"Checkout",
-				"Breakfast",
-				"Transfer to airport"
+				"(8am) Checkout",
+				"(9am) Breakfast at Cafe Plaza",
+				"(11am) Transfer to airport "
 			]
 		},
 		"Additional": [

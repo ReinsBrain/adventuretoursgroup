@@ -9,15 +9,19 @@
 		],
 		"include": {
 			"Day 1": [
-				"Airport pickup",
-				"Check-in at Marriott",
-				"Spa Monica Cabrera"
+				"(10am) Airport pickup",
+				"(11am) Check-in at Marriott",
+				"(1pm) Lunch at Maido",
+				"(330pm) Spa Monica Cabrera",
+				"(6pm) Drinks in the Lounge",
+				"(7pm) Dinner at La Vista Restaurant"
+
 			],
 			"Day 2": [
-				"Marriott buffet breakfast",
-				"Spa day at massage Wellbeing",
-				"Lunch at Trattoria Don Vito",
-				"Lift to airport or local hotel"
+				"(8am) Marriott buffet breakfast",
+				"(10am) Spa day at massage Wellbeing",
+				"(1pm) Lunch at Trattoria Don Vito",
+				"(2:30pm) Lift to airport or local hotel"
 			]
 		},
 		"Additional": [
@@ -38,22 +42,24 @@
 		],
 		"include": {
 			"Day 1": [
-				"Pick up from airport",
-				"Hotel drop off",
-				"Lunch at La Canta Rana",
-				"Tour of plaza and Grau",
-				"Dinner at Hotel B"
+				"(10am) Pick up from airport",
+				"(11am) Hotel drop off at Casa Republica Barranco",
+				"(1pm) Lunch at La Canta Rana",
+				"(2pm) Choco museum",
+				"(3pm) Tour of plaza and Grau",
+				"(7pm) Dinner at Hotel B"
 			],
 			"Day 2": [
-				"Breakfast at la Panetteria",
-				"Tour with scooters",
-				"Lunch at Isolina",
-				"Water fountain",
-				"Dinner at El Hornero"
+				"(9am) Breakfast at la Panetteria",
+				"(10am) Tour with scooters",
+				"(1pm) Lunch at Isolina",
+				"(5pm) Water fountain",
+				"(7pm) Dinner at El Hornero"
 			],
 			"Day 3": [
-				"Breakfast at Marriott",
-				"Airport drop off"
+				"(8am) Breakfast at Marriott",
+				"(9:30am) Larco Mar",
+				"(12pm) Airport drop off"
 			]
 		},
 		"Additional": [
