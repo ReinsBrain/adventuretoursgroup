@@ -124,8 +124,9 @@ and (max-device-width: 800px)
 		padding: 0 15px;
 		margin: 1em 0!important;
 	}
-	.icons.init {
-		/* width: 22em; */
+
+	div#yak-chat-embended {
+		width: 90vw;
 	}
 }
 
