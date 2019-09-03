@@ -83,6 +83,7 @@ body {
 	padding: 20px 50px;
 	position: relative;
 	max-height: 500px;
+	overflow: hidden;
 }
 
 .summary > h3 {
@@ -97,6 +98,14 @@ body {
 	font-weight: 400;
 }
 
+.summary > h4 {
+	margin-top: 10px;
+}
+
+.break {
+	margin: 10px 0;
+}
+
 .summary p {
 	text-align: justify;
 	overflow: hidden;
@@ -109,7 +118,7 @@ body {
 
 .gradient-white {
 	position: absolute;
-	bottom: 20px;
+	bottom: 0;
 	height: 200px;
 	left: 0;
 	right: 0;
@@ -141,7 +150,7 @@ body {
 	font-size: 1.2em;
 }
 
-.itinerary-item {padding-left: 10px;}
+.itinerary-item-a {padding-left: 10px;}
 
 .include-area {
 	align-self: start;

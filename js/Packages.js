@@ -68,7 +68,7 @@ function writePack(pack, mainBox) {
 			ul.innerHTML = `
 				<div class="itinerary-title">${key}</div>
 				${arr.map(itin => {
-					return `<div class="itinerary-item">${itin}</div>`
+					return `<div class="itinerary-item-a">${itin}</div>`
 				}).join('')}
 			`
 			includeBox.appendChild(ul);
