@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => { 
-	const allPacks = document.querySelector('#expand');
+	const allPacks = document.querySelector('#expand-all');
 	const cardArr = document.querySelectorAll('.trending-packages > *:not(.gradient-white)');
 	const home = document.querySelector('.logo.fadein');
 	const planBtn = document.querySelector('.btn-big');
