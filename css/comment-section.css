@@ -1,0 +1,141 @@
+/* Fifth Section - Comment section. */
+
+.comments {
+	position: relative;
+	background-position: center;
+	align-content: center;
+	font-weight: 300;
+	color: #666;
+	z-index: 1;
+}
+
+.comments > .people {
+	display: grid;
+	grid-auto-flow: column;
+
+}
+
+.comments::after {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	content: "";
+	background-size: cover;
+	opacity: 0.7;
+	z-index: -1;
+}
+
+.comments *, .comments .people {
+	z-index: 10;
+}
+
+.people > div:not(.title) {
+	margin: 5px;
+	padding: 5px 15px 5px 5px;
+	border-radius: 4px;
+	background-color: ghostwhite;
+	min-height: 60px;
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	column-gap: 10px;
+}
+
+.comments .person {
+	display: grid;
+}
+
+.comments .person img {
+	width: 7em;
+	align-self: start;
+	justify-self: center;
+	display: block;
+	box-shadow: 6px 6px 11px -4px rgba(0,0,0,0.75);
+	border-radius: 50%;
+}
+
+.comments .person-details > div {
+	font-size: .8em;
+	align-self: end;
+	margin-bottom: 5px;
+	text-align: left;
+}
+
+.comments .person-details > div:first-child {
+	font-size: 1.1em;
+}
+
+.comments .text-bubbles p {
+	margin: 0;
+	text-align: center;
+}
+
+.comments .text-bubbles {
+	font-style: italic;
+	border-radius: 10px;
+	color: var(--slider-bg);
+	background-color: var(--light-orange);
+	padding: 5px 6px;
+	box-shadow: 6px 6px 11px -4px rgba(0,0,0,0.75);
+	border-top-left-radius: 0;
+	margin-top: 5px;
+	width: fit-content
+}
+
+.comments .text-bubbles:not(:last-child) {
+	margin-bottom: 10px;
+}
+
+
+.pack-title {
+	padding-top: 1em;
+	padding-left: 10px;
+	height: 2.2em;
+}
+
+@media only screen and (min-device-width: 300px) 
+				   and (max-device-width: 800px)
+				{
+	.comments {
+		padding: 10px;
+	}
+	.comments .title {
+		text-align: center;
+	}
+	.comments .text-bubbles {
+		width: auto;
+	}
+}
+
+@media only screen and (min-device-width: 300px) 
+				   and (max-device-width: 800px) 
+				   and (orientation: portrait) 
+				{
+	.comments .people > div:not(:last-child) {
+		margin-bottom: 40px;
+	}
+	.comments .person img {
+		width: 100px;
+	}
+	.comments > .people {
+		grid-template-columns: none;
+		grid-column-gap: unset;
+		grid-auto-flow: row;
+	}
+}
+
+@media only screen 
+	and (max-device-width: 1080px)
+	and (orientation: landscape) 
+{
+	.comments > .people {
+		grid-template-columns: none;
+		grid-column-gap: unset;
+		grid-auto-flow: row;
+	}
+	.people > div:not(.title) {
+		margin: 5px 1em;
+	}
+}
+

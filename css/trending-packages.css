@@ -1,0 +1,124 @@
+/* trending-packages Section - Package Section and Read More. */
+.trending-packages {
+	background-color: ghostwhite;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	align-content: center;
+	grid-column-gap: 1em;
+	grid-row-gap: 1.5em;
+	margin: 1em 0;
+	cursor: pointer;
+	user-select: none;
+}
+
+.trending-packages.all {
+	margin: 2em 5em;
+}
+
+.trending-packages.init {
+	padding-top: 0;
+	margin-bottom: 1em;
+}
+
+.trending-packages > * {
+	background-color: #fff;
+	padding: 0 0 5px 0;
+	border-radius: 2px;
+	box-shadow: 0 0 2px rgba(0,0,0,.2);
+	overflow: hidden;
+	min-width: 350px;
+	justify-self: center;
+	width: 100%;
+}
+
+.trending-packages > *:hover {
+	box-shadow: 0 0 8px rgba(0,0,0,.35);
+}
+
+.package-details {
+	display: grid;
+	margin-top: 1em;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.package-details > .package-title {
+	text-align: start;
+	font-size: 1.3em;
+	color: var(--darkgray);
+	border-bottom: 1px solid var(--darkgray);
+}
+
+.package-details * {
+	color: var(--lightgray);
+	font-size: 1.1em;
+}
+
+.package-details > *:not(:last-child) {
+	margin-bottom: 10px;
+}
+
+.package-details .duration, .package-details .bestseller {
+	display: grid;
+	grid-template-columns: auto auto 1fr;
+	column-gap: 5px;
+}
+
+.package-details img {
+	width: 1em;
+	align-self: center;
+}
+
+.package-details .bestseller {
+	margin: 10px 0 20px 0;
+	background-color: var(--font-blue);
+	padding: 2px 5px;
+	border-radius: 4px;
+	width: fit-content;
+}
+
+.package-details .bestseller * {
+	color: white;
+}
+
+.pack {
+	height: 300px;
+	width: auto;
+	background-repeat: no-repeat !important;
+	background-size: cover !important;
+	transition: all .2s ease-in-out;
+	cursor: pointer;
+}
+
+.paracas {
+	background: url('https://res.cloudinary.com/dlia7phdx/image/upload/v1565986844/ATG/Packs/28177605.jpg');
+}
+
+.machupicchu {
+	background: url('https://res.cloudinary.com/dlia7phdx/image/upload/v1565986844/ATG/Packs/acient_megaverga.jpg');
+	background-position: center;
+}
+
+.lima {
+	background: url('https://res.cloudinary.com/dlia7phdx/image/upload/v1565986897/ATG/Packs/1547657073-49899908-1958822330833343-3696327805026435072-ojpg.jpg');
+	background-position: bottom center;
+}
+/*----------------------------------------*/
+
+@media only screen and (min-device-width: 300px) 
+				   and (max-device-width: 800px) 
+				   and (orientation: portrait) 
+{
+	.package-details > .package-title {
+		font-size: 24px;
+	}
+	.package-details * {
+		font-size: 18px;
+	}
+	.reviews .stars {
+		grid-template-columns: repeat(5, 20px);
+	}
+	.reviews .stars div {
+		height: 20px;
+	}
+}

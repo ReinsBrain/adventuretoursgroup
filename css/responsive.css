@@ -1,0 +1,180 @@
+
+@media only screen and (min-device-width: 300px) 
+and (max-device-width: 800px) 
+{
+	.citation {
+		visibility: hidden;
+	}
+	.title > div {
+		font-size: 24px;
+	}
+}
+@media only screen and (min-device-width: 300px) 
+				   and (max-device-width: 800px) 
+				   and (orientation: portrait) 
+				{
+	.slider-bg {
+		visibility: hidden;
+		display: none;
+	}
+	.first {
+		background-size: cover;
+		background-position: center;
+		height: 70vh !important;
+	}
+	.moving-background {
+		box-shadow: inset 12px 0px 64px 50px;
+	}
+	.trending-packages {
+		grid-template-rows: 1fr 1fr 1fr;
+		grid-template-columns: auto;
+		grid-gap: 50px;
+		margin: 0 auto 1em auto;
+	}
+	.read-more {
+		grid-area: auto;
+	}
+	.pack {
+		height: 400px;
+		width: auto;
+		background-size: cover !important;
+		border-radius: 3px;
+		background-position: bottom center;
+	}
+	.packages {
+		display: grid;
+		grid-auto-flow: row;
+		grid-template-columns: auto;
+		column-gap: unset;
+		padding: 0;
+	}
+	.include-area {
+		border-top: 1px solid #f4a46047;
+		border-left: none;
+	}
+	.init .gradient, .gradient {
+		grid-auto-flow: row;
+		grid-template-columns: unset;
+		height: 25vh;
+		font-size: 0.8em;
+		grid-template-rows: 2fr 1fr;
+	}
+	.init .gradient > h1 {
+		align-self: end;
+		/* font-size: 3em; */
+	}
+	.init .gradient > button {
+		align-self: start;
+		font-size: 2.5em;
+		margin-top: 10px;
+	}
+	
+	.gradient > .book {
+		grid-area: 2 / 1;
+		justify-self: center;
+		margin-bottom: 0.5em;
+	}
+	.summary > h3, .include-area > h3 {
+		padding-bottom: 0.5em;
+	}
+	.gradient > h3 {
+		text-align: center;
+		padding-bottom: 0;
+		font-size: 1.5em;
+	}
+	/*Packages fixes*/
+	.summary {
+		padding: 20px 10px;
+	}
+	.trending-packages > div {
+		width: 100%;
+		justify-self: center;
+		max-width: unset !important;
+		min-width: unset !important;
+	}
+	.trending-packages .text, .trending-packages .text li {
+		font-size: 1.6em;
+	}
+	.landpage #expand {
+		font-size: 30px;
+		/* width: 300px; */
+		padding: 10px;
+	}
+	footer.init > .icons img {
+		/* width: 3.5em; */
+		height: auto;
+	}
+	.slideshow-container {
+		width: 100%;
+		height: 22em;
+	}
+	.mySlides.fade.active img {
+		height: 345px;
+	}
+	.prev, .next {
+		/* font-size: 2.5em; */
+	}
+	.pack-title {
+		font-size: 2.5em !important;
+	}
+	.trending-packages {
+		/* grid-template-rows: 1fr 1fr 1fr; */
+		grid-template-columns: auto;
+		grid-template-columns: unset !important;
+		padding: 0 15px;
+		margin: 1em 0!important;
+	}
+
+	div#yak-chat-embended {
+		width: 90vw;
+	}
+}
+
+@media only screen 
+	and (max-device-width: 1080px)
+	and (orientation: landscape) 
+{
+	.trending-packages {
+		/* grid-template-rows: 1fr 1fr 1fr; */
+		/* grid-template-columns: auto; */
+		grid-auto-flow: row;
+		grid-gap: 50px;
+		grid-template-columns: unset !important;
+	}
+	.trending-packages > *:not(.gradient-white) {
+		margin: 0 1em;
+	}
+	.book-btn > button {
+		font-size: 1em;
+	}
+	.packages {
+		display: grid;
+		grid-auto-flow: row;
+		grid-template-columns: auto;
+		column-gap: unset;
+		padding: 20px;
+	}
+	/*Header fixes*/
+	.gradient {
+		grid-template-columns: 1fr 2fr;
+	}
+	.gradient h3, .gradient .book {
+		font-size: 1.3em;
+	}
+	/*Packages fixes*/
+	.trending-packages > div {
+		width: 80%;
+		justify-self: center;
+	}
+	.moving-background {
+		box-shadow: inset 12px 0px 64px 50px;
+	}
+	.slideshow-container {
+		width: 100%;
+		height: auto;
+	}
+	.slideshow-container .mySlides.fade.active {
+		height: auto;
+	}
+}
+

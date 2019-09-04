@@ -1,0 +1,12 @@
+# packages routes
+- /Packages/TARAPOTO-LAGUNA-AZUL-JUNGLE-PACK/ (Jungle)
+- /Packages/MIRAFLORES-SPA-R&R-PACK/ (Lima)
+- /Packages/ANCIENT-MEGALITHIC-MYSTERY-PACK/ (Cuzco)
+- /Packages/EXCLUSIVE-3-DAY-VIP-INTIMAR-EXPERIENCE/ (Paracas)
+- /Packages/EXCLUSIVE-2-DAY-VIP-INTIMAR-EXPERIENCE/ (Paracas)
+- /Packages/AREQUIPA-IN-LUXURY-PACK/ (Arequipa)
+- /Packages/COLCA-CANYON-VOLCANO-TREK-PACK/ (Arequipa)
+- /Packages/HUACACHINA-HONEYMOON-PACK/ (Paracas)
+- /Packages/EXOTIC-EATS-CUZCO-CULINARY-PACK/ (Cuzco)
+- /Packages/CUZCO-ROYALTY-PACK/ (Cuzco)
+- /Packages/BARRANCO-GASTRO-PACK/ (Lima)

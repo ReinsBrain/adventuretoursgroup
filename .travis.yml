@@ -1,0 +1,23 @@
+dist: xenial
+language: node_js
+node_js: '10'
+sudo: false
+branches:
+  only:
+  - develop
+before_install:
+- pip install --user awscli
+- export PATH=$PATH:$HOME/.local/bin
+script:
+- export PATH=$PATH:$HOME/.local/bin
+- '[ "${TRAVIS_PULL_REQUEST}" = "false" ] && exit 0 || sh ./travis.provision.sh
+  ${TRAVIS_PULL_REQUEST}'
+notifications:
+  slack:
+    rooms:
+     - rebelstackio:WyCcy84Yihg6JzdLG9MGNGD2
+    template:
+      - "Build <%{build_url}|#%{build_number}> (<%{compare_url}|%{commit}>) of %{repository_slug}@%{branch} by %{author} %{result} in %{duration}."
+      - "Pull Request <%{pull_request_url}|#%{pull_request_number}> by %{author} %{result}. Pull request deploy: http://adventuretoursgroup-%{pull_request_number}.s3-website-us-west-1.amazonaws.com"
+    on_success: always
+    on_failure: always 
