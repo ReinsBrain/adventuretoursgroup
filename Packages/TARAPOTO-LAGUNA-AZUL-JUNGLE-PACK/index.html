@@ -6,28 +6,90 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="og:type" content="website"/>
 	<meta name="keywords" content="Jungle, tour, Tarapoto, vip, adventure, Peru"/>
+	<meta name="tepago-assets" content="https://rebelstackio.github.io/tepagopro/">
 	<link rel="stylesheet" type="text/css" href="../../css/main.css">
 	<link rel="stylesheet" type="text/css" href="../../css/global.css">
 	<!-- PACKAGE STYLES -->
 	<link rel="stylesheet" type="text/css" href="../../css/packages.css">
+	<link rel="stylesheet" type="text/css" href="../../css/responsive.css">
+	<link rel="stylesheet" type="text/css" href="../../css/buttons.css">
+	<link rel="stylesheet" type="text/css" href="../../css/trending-packages.css">
+
 	<title>Tarapoto Laguna Azul Jungle Pack</title>
 	<!-- Script for generating the data -->
 	<script src="../../js/Packages.js"></script>
+	<script src="../../js/router.js"></script>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-146430801-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		gtag('config', 'UA-146430801-1');
+	</script>
 </head>
 <body>
-	<div class="first Cuzco">
-		<div class=logo>
+	<div class="first">
+
+		<div class="moving-background"></div>
+
+		<div class="logo fadein">
 			<picture> 
 				<!-- <source media="(min-width: 650px)" srcset="other-img.jpg"> -->
 				<img src="https://res.cloudinary.com/dlia7phdx/image/upload/v1564095577/ATG/atg-logo.png">
 			</picture>
 		</div>
-		<div class="gradient">
+		<div class="gradient fadein">
+		 <button class="book"> Book Now </button>
 			<h3>Tarapoto Laguna Azul Jungle Pack</h3>
 		</div>
 	</div>
 	<div class="packages">
 
 	</div>
+	<!--Footer-->
+	<footer>
+	<p>Powered by Yakchat</p>
+	<div class="icons">
+		<div>
+			<img src="https://res.cloudinary.com/dlia7phdx/image/upload/v1564523745/ATG/Icons-eco.png">
+		</div>
+		<div>
+			<img src="https://res.cloudinary.com/dlia7phdx/image/upload/v1564523744/ATG/Icons-tripad.jpg.png">
+		</div>
+		<div>
+			<img src="../../css/icons/facebook-square-brands.svg">
+		</div>
+		<div>
+			<img src="../../css/icons/instagram-brands.svg">
+		</div>
+	</div>
+</footer>
+	<!-- yakchat  -->
+	<div id="chat-bubble">
+
+	</div>
+	<!-- /////////////////  YAKCHAT //////////////////////// -->
+	<div id="yak-chat-embended" class="hidden">
+		<!-- the chat will be generated inside this -->
+	</div>
+	<!-- //////////////////  TEPAGOPRO /////////////////////// -->
+	<div id="tepago-area" class="hide">
+		<!-- tepago generated here-->
+	</div>
+	<!-- firebase -->
+	<script src="https://www.gstatic.com/firebasejs/5.8.4/firebase.js"></script>
+	<!-- front script -->
+	<script src="https://rebelstackio.github.io/yakchat/frontscript.js"></script>
+	<!-- culqui API -->
+	<script src="https://checkout.culqi.com/js/v3"></script>
+	<!-- Paypal API -->
+	<script
+	src="https://www.paypal.com/sdk/js?client-id=sb">
+	</script>
+	<!-- tepago pro -->
+	<script src="https://rebelstackio.github.io/tepagopro/main.js"></script>
+	<!-- chat togglers -->
+	<script src="../../js/chat-toggler.js"></script>
 </body>
 </html>

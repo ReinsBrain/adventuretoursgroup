@@ -1,39 +1,187 @@
 body {
-	background: var(--packages-bg);
+	background: ghostwhite;
 }
 .title-right {
 	background: var(--packages-title-bg);
 }
+* {
+	font-family: "Roboto";
+}
+.packages {
+	display: grid;
+	grid-template-columns: 1.5fr 1fr;
+	column-gap: 1em;
+	padding: 50px 150px;
+}
+
+.citation {
+	background-color: rgba(0,0,0,0.3);
+	padding-top: 10px;
+	width: 400px;
+	justify-self: end;
+	color: var(--font-light);
+	font-weight: 700;
+	border-top-left-radius: 20px;
+}
+
+.citation > *:not(:last-child) {
+	margin-bottom: 10px;
+}
+
+.citation .citation-content, .citation > *:last-child {
+	font-size: 1.3em;
+	font-weight: 300;
+	color: rgba(255, 255, 255, 0.75)
+}
+
+.citation div {
+	text-align: center;
+	font-style: italic;
+	font-size: 1.2em;
+}
+
+.packages h3 {
+	color: #666;
+}
 
 .packages > * {
-	padding: 0 10px;
-	width: 93vw;
-	margin: auto;
-	background: rgba(255, 255, 255, .5);
-	border-radius: 6px;
+	color: #666;
 }
 
-.first.Paracas {
-	background: url('https://img.elcomercio.pe/files/ec_article_multimedia_gallery/uploads/2018/09/13/5b9aa200b8f03.jpeg') no-repeat;
-	background-size: cover;
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
 }
-
-.first.Lima {
-	background: url('https://upload.wikimedia.org/wikipedia/commons/4/45/Miraflores_Lima_Peru_skyline.jpg');
-	background-size: cover;
+.fadein {
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 2s;
 }
-
-.first.Jungle {
-	background: url('https://img.elcomercio.pe/files/ec_article_multimedia_gallery/uploads/2017/07/11/5964fb636ff06.jpeg');
-	background-size: cover;
-}
-
-.first.Arequipa {
-	background: url('https://img.elcomercio.pe/files/ec_article_multimedia_gallery/uploads/2018/09/28/5baea4d0abb7c.jpeg');
-	background-size: cover;
-}
-
 .gradient > h3 {
 	text-align: end;
 	padding-right: 20px;
+	font-size: 1.6em;
+	align-self: end;
+	opacity: 1;
+	padding-bottom: 1em;
+	margin-left: 1em;
+}
+
+.include-area {
+	padding: 20px;
+	border-left: 1px solid #f4a46047;
+	opacity: 1;
+	background-color: #f4a4609c;
+}
+
+.summary {
+	padding: 20px 50px;
+	position: relative;
+	max-height: 500px;
+	overflow: hidden;
+}
+
+.summary > h3 {
+	color: var(--font-blue);
+}
+
+.summary > h3, .include-area > h3 {
+	font-size: 1.7em;
+	text-align: start;
+	padding-bottom: 1em;
+	font-style: italic;
+	font-weight: 400;
+}
+
+.summary > h4 {
+	margin-top: 10px;
+}
+
+.break {
+	margin: 10px 0;
+}
+
+.summary p {
+	text-align: justify;
+	overflow: hidden;
+	max-height: 350px;
+}
+
+.summary.expanded p {
+	max-height: none;
+}
+
+.gradient-white {
+	position: absolute;
+	bottom: 0;
+	height: 200px;
+	left: 0;
+	right: 0;
+	background-image: linear-gradient(rgba(248, 248, 255, 0), rgba(248, 248, 255,0.9) 40%);
+	display: grid;
+}
+
+.gradient-white > div {
+	align-self: end;
+	margin-bottom: 2em;
+	justify-self: center;
+}
+
+.gradient-white > div:hover {
+	color: sandybrown;
+	border-color: sandybrown;
+}
+
+.summary.expanded .gradient-white {
+	height: 100px;
+	position: relative;
+}
+
+.itinerary {padding-left: 20px;}
+
+.itinerary > .itinerary-title{
+	margin: 15px 0;
+	font-weight: 700;
+	font-size: 1.2em;
+}
+
+.itinerary-item-a {padding-left: 10px;}
+
+.include-area {
+	align-self: start;
+	position: relative;
+	margin: 10px;
+	border-radius: 6px;
+	box-shadow: 6px 6px 11px -4px rgba(0,0,0,0.75)
+}
+
+.include-area::after {
+	content: "";
+	opacity: 0.3;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	position: absolute;
+	z-index: -1;
+	background-color: #f4a46080;
+}
+
+.include-area h3 {
+	border-bottom: 1px solid #66666657;
+}
+
+.gradient > .book {
+	align-self: end;
+	margin-bottom: 1em;
+	justify-self: end;
+}
+
+.summary.expanded {
+	max-height: unset;
 }

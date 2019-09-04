@@ -1,8 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,400i&display=swap');
+* {
+	font-family: 'Roboto';
+}
 
 /* Body Section. */
 body, html {
 	margin: 0;
-	font-family: "Roboto";
+	background-color: ghostwhite;
 }
 
 /* First Section - Gradient, Big Package image,text and logo. */
@@ -10,30 +14,36 @@ body, html {
 .logo {
 	position: relative;
 	padding: 15px;
+	cursor: pointer;
 }
 
 .first {
 	position: relative;
-	background: url('https://res.cloudinary.com/dlia7phdx/image/upload/v1564095631/ATG/atg-mp-big.jpg');
-	background-size: cover;
-	background-position: center top;
+	height: 60vh;
+	overflow: hidden;
+}
+
+.first.init {
 	height: 100vh;
 }
 
 .gradient {
+	height: 7em;
 	position: absolute;
 	bottom: 0;
-	background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0,0.9) 40%);
+	/* background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0,0.9) 40%); */
 	width: 100%;
 	display:grid;
+	grid-auto-flow: column;
+	grid-template-columns: 1.5fr auto;
 }
 
 .gradient > div {
 	font-size: .8em;
 }
 
-.gradient button {
-	height: 6vh;
+.gradient button, .book {
+	height: 1.5em;
 	background-color: orange;
 	color: #000;
 	place-self: center;
@@ -58,59 +68,43 @@ h1, h3 {
 	color: var(--font-light);
 	text-align: center;
 	font-weight: 300;
+	margin: 0;
+}
+section {
+	padding: 50px 1em;
 }
 
-/* Second Section - Package Section and Read More. */
+/*Titles*/
 
-.second {
-	background-color: ghostwhite;
-	display: grid;
-	grid-template-columns: 33% 34% 33%;
-	align-content: center;
-	padding-top: 8em;
-	padding-bottom: 8em;
+.title {
+	position: relative;
 }
 
-.pack {
-	height: 300px;
-	width: auto;
-	margin: 0 10px 0 10px;
-	background-repeat: no-repeat !important;
-	background-size: cover !important;
-	border-radius: 3px;
+.title::before {
+	position: absolute;
+	content: "";
+	height: 3px;
+	background-color: var(--font-blue);
+	left: 0;
+	right: 0;
+	z-index: 1;
+	top: calc(50% - 1.5px);
 }
 
-.paracas {
-	background: url('https://res.cloudinary.com/dlia7phdx/image/upload/v1564342728/ATG/Paracas.jpg');
-	border: 1px solid black;
-	background-position: bottom center;
-}
-
-.machupicchu {
-	background: url('https://res.cloudinary.com/dlia7phdx/image/upload/v1565189750/ATG/machu-picchu-amanecer.jpg');
-	border: 1px solid black;
-	background-position: center;
-}
-
-.lima {
-	background: url('https://res.cloudinary.com/dlia7phdx/image/upload/v1564101948/ATG/Lima.png');
-	border: 1px solid black;
-	background-position: bottom center;
-}
-/*----------------------------------------*/
-.text {
-	display: grid;
-}
-
-.text > ul {
-	font-size: 16px;
+.title > div {
+	position: relative;
+	font-size: 2.5em;
+	font-weight: 400;
+	font-style: italic;
+	z-index: 1000;
 	text-align: center;
-	list-style-type: none;
-}
-
-.text > a {
-	text-align: center;
-	font-size: 22px;
+	color: white;
+	background-color: var(--font-blue);
+	width: fit-content;
+	margin: 0 auto 1em auto;
+	border-radius: 10px;
+	padding: 10px;
+	word-break: break-all;
 }
 
 .read-more {
@@ -128,7 +122,6 @@ h1, h3 {
 }
 
 .text:hover {
-	text-decoration: underline;
 	cursor:pointer;
 }
 
@@ -142,9 +135,11 @@ h1, h3 {
 
 /* Slideshow container */
 .slideshow-container {
-  /* max-width: 1000px; */
   position: relative;
   margin: auto;
+  width: 90%;
+  /* max-height: 338px; */
+  overflow: hidden;
 }
 
 /* Fading animation */
@@ -152,7 +147,16 @@ h1, h3 {
   -webkit-animation-name: fade;
   -webkit-animation-duration: 1.5s;
   animation-name: fade;
-  animation-duration: 1.5s;
+  animation-duration: .2s;
+}
+
+.slide-bg {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.2);
 }
 
 @-webkit-keyframes fade {
@@ -167,6 +171,12 @@ h1, h3 {
 /* Hide the images by default */
 .mySlides {
   display: none;
+  height: 352px;
+  background-color: var(--slider-bg);
+}
+
+.mySlides.fade.active > img {
+	height: 100%;
 }
 
 /* Next & previous buttons */
@@ -183,6 +193,7 @@ h1, h3 {
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
   user-select: none;
+  z-index: 2;
 }
 
 /* Position the "next button" to the right */
@@ -199,15 +210,16 @@ h1, h3 {
 /* Caption text */
 .slidertext {
   color: #f2f2f2;
-  font-size: 40px;
+  font-size: 1.5em;
   padding: 8px 12px;
   position: absolute;
-  top: 35%;
-  width: 100%;
+  top: 45%;
+  width: 80%;
   text-align: center;
   font-weight: 300;
-  text-shadow: 2px 2px darkgray;
   box-sizing: border-box;
+  z-index: 2;
+  left: 10%;
 }
 
 /* Number text (1/7 etc) */
@@ -218,10 +230,13 @@ h1, h3 {
   position: absolute;
   top: 0;
   display: none;
+  opacity: 0;
 }
 
 .mySlides.fade.active {
     display: block;
+    opacity: 1;
+    height: auto;
 }
 
 /* Forth (Spacing) Section - Just a few pixels between the Slider and the Comment section. */
@@ -232,50 +247,110 @@ h1, h3 {
 	color: white;
 }
 
-/* Fifth Section - Comment section. */
-
-.comments {
-	height: 30vh;
-	background: url('https://res.cloudinary.com/dlia7phdx/image/upload/v1564095631/ATG/atg-mp-big.jpg');
-	background-size: cover;
-	background-position: center;
-	display: grid;
-	grid-template-columns: auto auto auto;
-	align-content: center;
-	text-align: -webkit-center;
-	color: var(--font-light);
-	font-weight: 300;
-	grid-column-gap: 20px;
-}
-
-.title {
-	grid-column-start: 1; 
-	grid-column-end: 4; 
-	grid-row-start: 1; 
-	grid-row-end: 3; 
-	height: 80px;
-	font-size: 200%;
-	text-decoration: underline;
-	font-weight: 300;
-}
-
 /* Footer - Icons for Ecofriendly, Trip Advisor and English/Spanish Language */
 
 footer {
-	height: 5vh;
 	display: grid;
 	background-color: var(--darkgray);
-	grid-template-columns: 25% 25% 25% 25%;
+	grid-auto-flow: column;
 }
 
 .icons {
 	display: grid;
-	grid-template-columns: 50% 50%;
-	grid-column-start: 4;
+	/* grid-column-start: 3; */
 	align-content: center;
+	grid-auto-flow: column;
+	width: 200px;
+	justify-self: end;
+}
+
+
+.icons img {
+    width: 2em;
+}
+
+.icons > * {
+    place-self: center;
+    cursor: pointer;
 }
 
 footer > p {
-	text-align: center;
+	text-align: start;
 	color: var(--font-light);
+	padding-left: 10px;
+	margin: 15px 0;
+}
+
+@-webkit-keyframes move-bg {
+	0% {
+		-webkit-transform: translateX(0);
+	}
+	25% {
+		-webkit-transform: translateX(-3%);
+	}
+	50% {
+		-webkit-transform: translateX(-5%);
+	}
+	75% {
+		-webkit-transform: translateX(-3%);
+	}
+	100% {
+		-webkit-transform: translateX(0);
+	}
+}
+.moving-background {
+	content: "";
+	background-position: cover;
+	top: -5%;
+	left: -6%;
+	bottom: -5%;
+	right: -6%;
+	overflow: hidden;
+	position: absolute;
+	animation-name: move-bg;
+	animation-duration: 30s;
+	animation-timing-function: linear;
+	box-shadow: inset 0px -3px 125px 94px;
+	animation-iteration-count: infinite;
+}
+
+.moving-background.init {
+	background: url('https://res.cloudinary.com/dlia7phdx/image/upload/v1564095631/ATG/atg-mp-big.jpg');
+	background-size: cover;
+	/* box-shadow: inset 0px -3px 125px 94px; */
+}
+
+.init .gradient {
+	grid-template-columns: auto;
+	height: 8em;
+	grid-auto-flow: row;
+}
+
+.gradient-white.landpage {
+	background-color: ghostwhite;
+	padding-bottom: 2em;
+}
+
+.gradient-white.landpage > div {
+	width: 6em;
+	align-self: end;
+	margin-bottom: 2em;
+	justify-self: center;
+	margin: auto;
+	text-align: center;
+	margin-bottom: 1em;
+}
+
+.main-page .btn-alt {
+	font-size: 1.8em !important;
+	padding: 5px 20px !important;
+}
+
+.slider-bg {
+	background-color: var(--slider-bg);
+	padding: 2em 0;
+}
+
+.bestseller.hidden {
+	opacity: 0;
 }
