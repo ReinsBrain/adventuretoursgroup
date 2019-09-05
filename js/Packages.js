@@ -8,7 +8,7 @@ if (this.readyState == 4 && this.status == 200) {
 	render(jsonResponse);
 }
 };
-xhttp.open("GET", "../../_data/packages/" + packageName + ".json", true);
+xhttp.open("GET", "../../data/packages/" + packageName + ".json", true);
 xhttp.send();
 
 function render (data) {

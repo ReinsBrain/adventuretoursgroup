@@ -13,7 +13,7 @@ function getAllPacks () {
 			writePack(jsonResponse);
 		}
 		};
-		xhttp.open("GET", "../../_data/packages/" + dest + ".json", true);
+		xhttp.open("GET", "../../data/packages/" + dest + ".json", true);
 		xhttp.send();
 	})
 }
