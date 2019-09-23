@@ -37,10 +37,12 @@ function writePack (packs) {
 					<img src="../css/icons/crown-solid.svg" alt="">
 					<div>bestseller</div>
 				</div>
+				<!--
 				<div class="reviews">
 					<div class="stars"><div></div><div></div><div></div><div></div><div></div></div>
 					<div>${ p.reviews } Reviews</div>
 				</div>
+				-->
 			</div>
 		`
 		mainBox.appendChild(itemDiv);
