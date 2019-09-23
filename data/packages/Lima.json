@@ -34,9 +34,10 @@
 	},
 	{
 		"title": "Barranco Gastro Pack",
+		"isDesable": "true",
 		"tags": ["rest&relax"],
 		"reviews":"920k",
-		"bestSeller": true,
+		"bestSeller": false,
 		"imgs": [
 			"https://res.cloudinary.com/dlia7phdx/image/upload/v1565986897/ATG/Packs/1547657073-49899908-1958822330833343-3696327805026435072-ojpg.jpg"
 		],

@@ -37,6 +37,7 @@ function writePack (packs) {
 					<img src="../css/icons/crown-solid.svg" alt="">
 					<div>bestseller</div>
 				</div>
+				<div class="${p.isDesable ? '' : 'hidden'} corner-ribbon bottom-right red shadow small">Coming Soon</div>
 				<!--
 				<div class="reviews">
 					<div class="stars"><div></div><div></div><div></div><div></div><div></div></div>
@@ -46,8 +47,10 @@ function writePack (packs) {
 			</div>
 		`
 		mainBox.appendChild(itemDiv);
-		itemDiv.addEventListener('click', () => {
-			document.location.href = '/Packages/' + itemDiv.childNodes[1].id + '/';
-		})
+		if (itemDiv.children[0].id !== 'BARRANCO-GASTRO-PACK'){
+			itemDiv.addEventListener('click', () => {
+				document.location.href = '/Packages/' + itemDiv.childNodes[1].id + '/';
+			})
+		}
 	})
 }
