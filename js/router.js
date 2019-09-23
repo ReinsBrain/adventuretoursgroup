@@ -12,9 +12,11 @@ document.addEventListener('DOMContentLoaded', () => {
 	if (cardArr !== null) {
 		console.log(cardArr);
 		cardArr.forEach((el) => {
-			el.addEventListener('click', () => {
-				document.location.href = '/Packages/' + el.childNodes[1].id;
-			})
+			if (el.children[0].id !== 'BARRANCO-GASTRO-PACK'){
+				el.addEventListener('click', () => {
+					document.location.href = '/Packages/' + el.childNodes[1].id;
+				})
+			}
 		})
 	}
 	home.addEventListener('click', () => {
