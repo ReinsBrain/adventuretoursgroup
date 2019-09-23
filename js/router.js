@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	if (cardArr !== null) {
 		console.log(cardArr);
 		cardArr.forEach((el) => {
-			if (el.children[0].id !== 'BARRANCO-GASTRO-PACK'){
+			if (el.children[0].id !== 'BARRANCO-GASTRO-PACK') {
 				el.addEventListener('click', () => {
 					document.location.href = '/Packages/' + el.childNodes[1].id;
 				})

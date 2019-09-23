@@ -46,8 +46,10 @@ function writePack (packs) {
 			</div>
 		`
 		mainBox.appendChild(itemDiv);
-		itemDiv.addEventListener('click', () => {
-			document.location.href = '/Packages/' + itemDiv.childNodes[1].id + '/';
-		})
+		if (itemDiv.children[0].id !== 'BARRANCO-GASTRO-PACK'){
+			itemDiv.addEventListener('click', () => {
+				document.location.href = '/Packages/' + itemDiv.childNodes[1].id + '/';
+			})
+		}
 	})
 }
