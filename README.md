@@ -19,30 +19,30 @@ npm run build
 ├── package.json  
 ├── package-lock.json  
 ├── public  
-│   └── index.html  
+│   └── index.html  
 ├── README.md  
 ├── src  
-│   ├── components  
-│   │   └── header  
-│   │       ├── index.css  
-│   │       └── index.js  
-│   ├── containers  
-│   │   └── main-container  
-│   │       └── index.js  
-│   ├── css  
-│   │   ├── general.css  
-│   │   └── icons  
-│   │       ├── clock-regular.svg  
-│   │       ├── comment-alt-solid.svg  
-│   │       ├── crown-solid.svg  
-│   │       ├── facebook-square-brands.svg  
-│   │       ├── instagram-brands.svg  
-│   │       └── star-solid.svg  
-│   ├── handlers  
-│   │   ├── index.js  
-│   │   └── MainHandler.js  
-│   └── main  
-│       └── index.js  
+│   ├── components  
+│   │   └── header  
+│   │       ├── index.css  
+│   │       └── index.js  
+│   ├── containers  
+│   │   └── main-container  
+│   │       └── index.js  
+│   ├── css  
+│   │   ├── general.css  
+│   │   └── icons  
+│   │       ├── clock-regular.svg  
+│   │       ├── comment-alt-solid.svg  
+│   │       ├── crown-solid.svg  
+│   │       ├── facebook-square-brands.svg  
+│   │       ├── instagram-brands.svg  
+│   │       └── star-solid.svg  
+│   ├── handlers  
+│   │   ├── index.js  
+│   │   └── MainHandler.js  
+│   └── main  
+│       └── index.js  
 ├── travis.provision.sh  
 └── webpack.config.js  
 
