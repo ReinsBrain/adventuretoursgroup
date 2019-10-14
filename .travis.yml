@@ -8,9 +8,12 @@ branches:
 before_install:
 - pip install --user awscli
 - export PATH=$PATH:$HOME/.local/bin
+install:
+  - npm install
 script:
-- export PATH=$PATH:$HOME/.local/bin
-- '[ "${TRAVIS_PULL_REQUEST}" = "false" ] && exit 0 || sh ./travis.provision.sh
+  - export PATH=$PATH:$HOME/.local/bin
+  - npm run build 
+  - '[ "${TRAVIS_PULL_REQUEST}" = "false" ] && exit 0 || sh ./travis.provision.sh
   ${TRAVIS_PULL_REQUEST}'
 notifications:
   slack:
