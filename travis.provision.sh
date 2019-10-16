@@ -10,10 +10,8 @@ datestamp=$(date +%s)
 t_pull_request=${travis_arg:-"vagrant-${datestamp}"}
 policy_file=/tmp/policy.json
 lifecycle_file=/tmp/lifecycle.json
-
-set +a
-
 build_dir=$TRAVIS_BUILD_DIR/dist/
+set +a
 
 echo "..........Creating Pull Request Deploy.........."
 echo "..........Create a new S3 bucket.........."
