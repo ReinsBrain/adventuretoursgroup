@@ -81,5 +81,5 @@ window.customElements.define('component-name', ComponentName);
 ```
     our new webcompnent can be created as html
 ```html
-<compnent-name></component-name>
+<component-name></component-name>
 ```
