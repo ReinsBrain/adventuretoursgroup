@@ -1,0 +1,104 @@
+{
+    "definitions": {},
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "#/options",
+    "type": "array",
+    "title": "Options Schema",
+    "items": {
+      "$id": "#/items",
+      "type": "object",
+      "title": "Option Object",
+      "required": [
+        "key",
+        "summ",
+        "desc",
+        "mod",
+        "modby",
+        "cre",
+        "creby",
+        "pricing",
+        "options"
+      ],
+      "properties": {
+        "key": {
+          "$id": "#/items/properties/key",
+          "type": "string",
+          "title": "key string",
+          "default": "",
+          "examples": [
+            ""
+          ],
+          "pattern": "^(.*)$"
+        },
+        "summ": {
+          "$id": "#/items/properties/summ",
+          "type": "string",
+          "title": "string max 256 chars",
+          "default": "",
+          "examples": [
+            ""
+          ],
+          "pattern": "^(.*)$"
+        },
+        "desc": {
+          "$id": "#/items/properties/desc",
+          "type": "string",
+          "title": "Description",
+          "default": "",
+          "examples": [
+            ""
+          ],
+          "pattern": "^(.*)$"
+        },
+        "mod": {
+          "$id": "#/items/properties/mod",
+          "type": "number",
+          "title": "double precision seconds Unix Epoch",
+          "default": 0,
+          "examples": [
+            0.0
+          ]
+        },
+        "modby": {
+          "$id": "#/items/properties/modby",
+          "type": "string",
+          "title": "JWT",
+          "default": "",
+          "examples": [
+            ""
+          ],
+          "pattern": "^(.*)$"
+        },
+        "cre": {
+          "$id": "#/items/properties/cre",
+          "type": "number",
+          "title": "double precision seconds Unix Epoch ",
+          "default": 0,
+          "examples": [
+            0
+          ]
+        },
+        "creby": {
+          "$id": "#/items/properties/creby",
+          "type": "string",
+          "title": "JWT",
+          "default": "",
+          "examples": [
+            ""
+          ],
+          "pattern": "^(.*)$"
+        },
+        "pricing": {
+          "$id": "#/items/properties/pricing",
+          "type": "array",
+          "title": "Pricing Scheam (./pricing.json)"
+        },
+        "options": {
+          "$id": "#/items/properties/options",
+          "type": "array",
+          "title": "Options Schema"
+        }
+      }
+    }
+  }
+  
