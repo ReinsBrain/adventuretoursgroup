@@ -121,3 +121,7 @@ main-header > div {
 	padding-right: 10px;
 	cursor: pointer;
 }
+
+#container {
+	display: grid;
+}

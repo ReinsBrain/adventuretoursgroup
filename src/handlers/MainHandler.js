@@ -3,7 +3,17 @@
 */
 
 const MainDefaultState = {
-	value: 1
+	value: 1,
+	filterValues: {
+		departMonth: '',
+		departDate:'',
+		duration: '12 Days',
+		pax: {
+			addult: 1,
+			children: 0,
+			infant: 0
+		}
+	}
 };
 
 export default {
