@@ -1,17 +1,21 @@
-main-filter > div {
+main-filter {
 	background-color: #666;
+}
+main-filter > div {
 	height: 70px;
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-columns: 1fr .5fr 1fr;
+	width: 70%;
+	margin: auto;
 }
 
 .depart-type {
 	color: #fff;
 	cursor: pointer;
 	user-select: none;
-	padding-left: 20px;
 	display: grid;
 	grid-template-columns: 1em 1fr;
+	grid-column-gap: 10px;
 }
 
 .depart-type > * {
@@ -64,27 +68,9 @@ main-filter > div {
 }
 
 main-filter > div > * {
-	align-self: center;
+	place-self: center;
 }
 
-.depart-date > input {
-	width: 4em;
-	outline: none;
-	padding: 5px 5px;
-	border: 1px solid #d3d3d3;
-	border-radius: 3px;
-	color: #666;
-	justify-self: center;
-}
-
-.depart-date {
-	display: grid;
-}
-
-.depart-date > i {
-	justify-self: center;
-	color: #fff;
-}
 
 .departs {
 	display: grid;

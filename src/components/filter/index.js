@@ -1,5 +1,6 @@
 import { MetaComponent } from '@rebelstack-io/metaflux';
 import './depart-select';
+import './day-incrementer';
 import './index.css';
 
 class Filter extends MetaComponent {
@@ -12,7 +13,7 @@ class Filter extends MetaComponent {
 			<div>
 				<div class="departs">
 					<div id="dropdown-target" class="depart-type">
-						<i class="fas fa-angle-down"></i>
+						<i class="fas fa-info-circle"></i>
 						<span>Depart Month</span> 
 					</div>
 					<pretty-dropdown target="dropdown-target">
@@ -26,11 +27,7 @@ class Filter extends MetaComponent {
 					</pretty-dropdown>
 					<depart-select></depart-select>
 				</div>
-				<div class="depart-date">
-					<i class="fas fa-chevron-up"></i>
-					<input type="text" value="12 Days"/>
-					<i class="fas fa-chevron-down"></i>
-				<div>
+				<day-incrementer></day-incrementer>
 				<div class="pax">
 					<pax-selector></pax-selector>
 				</div>
@@ -46,6 +43,7 @@ class Filter extends MetaComponent {
 	}
 	// Optional, here you can define the DOM Events
 	addListeners() {
+		// DEPART TYPE
 		this.querySelectorAll('.p-menu-item').forEach(el => {
 			el.addEventListener('click', () => {
 				this.querySelector('.depart-type > span').innerHTML = el.innerHTML;

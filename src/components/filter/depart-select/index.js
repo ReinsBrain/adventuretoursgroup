@@ -3,7 +3,7 @@ import './index.css';
 
 class DepartSelect extends MetaComponent {
 	constructor() {
-		super(global.storage) // the storage parameter is optional
+		super()
 	}
 	// Mandatory expect to return a String or HTMLElement
 	render(){
@@ -33,15 +33,6 @@ class DepartSelect extends MetaComponent {
 				</div>
 			</div>
 		`
-	}
-	// Is mandatory only if the storage parameter is pass in the constructor
-	// expect to return an object, here is where you listen the store changes
-	handleStoreEvents() {
-		return {
-			'MY-STORE-EVENT': () => {
-				// do something
-			}
-		}
 	}
 	// Optional, here you can define the DOM Events
 	addListeners() {
