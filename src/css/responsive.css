@@ -1,0 +1,15 @@
+@media only screen 
+  and (max-device-width: 800px)
+  and (min-device-width: 300px)
+  and (orientation: portrait) {
+	main-filter > div {
+		grid-template-columns: 1fr !important;
+		grid-template-rows: 1fr 1fr 1fr;
+		height: unset !important;
+		width: 100% !important;
+		grid-row-gap: 10px;
+	}
+	#options{
+		left: -138px !important;
+	}
+}

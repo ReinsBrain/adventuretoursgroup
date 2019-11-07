@@ -1,5 +1,6 @@
 import { MetaContainer } from '@rebelstack-io/metaflux';
 import '../../css/general.css';
+import '../../css/responsive.css';
 import '../../handlers';
 import '../../components/header';
 import '../../components/filter';
