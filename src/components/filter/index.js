@@ -1,6 +1,7 @@
 import { MetaComponent } from '@rebelstack-io/metaflux';
 import './depart-select';
 import './day-incrementer';
+import './pax-selector';
 import './index.css';
 
 class Filter extends MetaComponent {
@@ -29,6 +30,7 @@ class Filter extends MetaComponent {
 				</div>
 				<day-incrementer></day-incrementer>
 				<div class="pax">
+					<span>Guests</span>
 					<pax-selector></pax-selector>
 				</div>
 			</div>

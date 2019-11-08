@@ -10,6 +10,7 @@
 	opacity: 0;
 	visibility: hidden;
 	transition: all .5s ease-in-out;
+	z-index: 2;
 }
 
 .select-box {

@@ -12,4 +12,8 @@
 	#options{
 		left: -138px !important;
 	}
+	main-filter > div > * {
+		place-self: end !important;
+		padding-right: 10px;
+	}
 }

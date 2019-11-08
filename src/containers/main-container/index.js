@@ -12,7 +12,9 @@ class MainContainer extends MetaContainer {
 		content.id = 'container';
 		const header = document.createElement('atg-header');
 		const filter = document.createElement('main-filter');
-		content.append(header, filter);
+		const metapackage = document.createElement('div');
+		metapackage.className = 'metapackage';
+		content.append(header, filter, metapackage);
 		return content;
 	}
 }
