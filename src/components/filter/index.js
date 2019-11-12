@@ -2,8 +2,8 @@ import { MetaComponent } from '@rebelstack-io/metaflux';
 import './depart-select';
 import './day-incrementer';
 import './pax-selector';
+import './date-picker';
 import './index.css';
-
 class Filter extends MetaComponent {
 	constructor() {
 		super(global.storage)
@@ -18,15 +18,12 @@ class Filter extends MetaComponent {
 						<span>Depart Month</span> 
 					</div>
 					<pretty-dropdown target="dropdown-target">
-						<div class="p-menu-item">
-							Depart month
-						</div>
+						<div class="p-menu-item">Depart month</div>
 						<div class="p-menu-devider"></div>
-						<div class="p-menu-item">
-							Depart day
-						</div>
+						<div class="p-menu-item">Depart day</div>
 					</pretty-dropdown>
 					<depart-select></depart-select>
+					<date-picker></date-picker>
 				</div>
 				<day-incrementer></day-incrementer>
 				<div class="pax">
@@ -49,9 +46,21 @@ class Filter extends MetaComponent {
 		this.querySelectorAll('.p-menu-item').forEach(el => {
 			el.addEventListener('click', () => {
 				this.querySelector('.depart-type > span').innerHTML = el.innerHTML;
-				this.querySelector('.depart-menu').classList.toggle('hidden');
+				this.togglePicker(el.innerHTML);
 			})
 		});
+	}
+	/**
+	 * toggle between datepicker or monthpicker
+	 */
+	togglePicker (inner) {
+		if (inner === 'Depart day') {
+			this.querySelector('depart-select > .select-box').classList.add('hide');
+			this.querySelector('date-picker > .date-picker').classList.remove('hide');
+		} else {
+			this.querySelector('depart-select > .select-box').classList.remove('hide');
+			this.querySelector('date-picker > .date-picker').classList.add('hide');
+		}
 	}
 }
 // Define our new webcomponent
