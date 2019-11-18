@@ -3,6 +3,7 @@ import './depart-select';
 import './day-incrementer';
 import './pax-selector';
 import './date-picker';
+import './tag-selector';
 import './index.css';
 class Filter extends MetaComponent {
 	constructor() {
@@ -29,6 +30,9 @@ class Filter extends MetaComponent {
 				<div class="pax">
 					<span>Guests</span>
 					<pax-selector></pax-selector>
+				</div>
+				<div class="tags">
+					<tag-selector></tag-selector>
 				</div>
 			</div>
 		`

@@ -9,7 +9,10 @@
 		width: 100% !important;
 		grid-row-gap: 10px;
 	}
-	#options{
+	.pax-opt {
+		left: -194px !important;
+	}
+	.depart-opt{
 		left: -138px !important;
 	}
 	main-filter > div > * {

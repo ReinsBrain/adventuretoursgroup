@@ -13,7 +13,21 @@ const MainDefaultState = {
 			children: 0,
 			infant: 0
 		}
-	}
+	},
+	tagCategories: [
+		{
+			title: 'Hotels',
+			tags: ['suite', 'swimming pool', 'romance', 'internet access', 'luxury']
+		},
+		{
+			title: 'Flights',
+			tags: ['first class', 'round trip', 'multiple cities']
+		},
+		{
+			title: 'Tours',
+			tags: ['VIP', 'romance', 'adventure', 'beach', 'montain', 'jungle', 'tropico']
+		},
+	]
 };
 
 export default {

@@ -19,7 +19,7 @@ class DepartSelect extends MetaComponent {
 						</div>
 					</div>
 				</div>
-				<div id="options">
+				<div class="depart-opt" id="options">
 					<div>
 						<span> Feb 2020 </span>
 					</div>
