@@ -124,6 +124,7 @@ main-header > div {
 
 #container {
 	display: grid;
+	overflow-x: hidden;
 }
 
 .metapackage {

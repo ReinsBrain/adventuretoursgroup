@@ -4,23 +4,24 @@
 	bottom: -63px;
 	background: var(--lightgray);
 	padding: 1em 0;
-	overflow-x: overlay;
-	max-width: 1300px;
 	box-shadow: inset 1px -5px 9px 2px #444040;
 	box-sizing: border-box;
 }
 
 tag-selector {
-	display: grid;
-	grid-auto-flow: column;
+	display: flex;
+	overflow-x: auto;
+	max-width: 100vw;
 }
 
 .category-box {
 	display: inline-flex;
+	flex: 1 0 auto;
 }
 
 .tags-box {
 	display: inline-flex;
+	flex: 1 0 auto;
 }
 
 pretty-tag span {
@@ -41,6 +42,6 @@ pretty-tag > div {
 	margin: 0 5px;
 }
 
-.tags::-webkit-scrollbar {
+tag-selector::-webkit-scrollbar {
 	display: none;
 }
