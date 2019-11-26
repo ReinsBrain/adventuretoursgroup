@@ -1,0 +1,42 @@
+.pax-item {
+	grid-template-columns: 1fr 1fr !important;
+}
+
+.incrementer {
+	display: grid;
+	grid-template-columns: 2em 2em 2em;
+	grid-column-gap: 10px;
+}
+
+.incrementer > i {
+	place-self: center;
+	color: var(--danger-bg);
+	transition: all .2s ease;
+}
+
+.incrementer > i:hover {
+	color: var(--danger-bg-hv);
+}
+
+.incrementer > input {
+	text-align: center;
+	border: none;
+	outline: none;
+	color: var(--primary-bg)
+}
+
+.pax-item:hover {
+	background-color: #ffffff !important;
+	color: inherit !important;
+}
+
+.pax {
+	display: grid;
+	grid-template-columns: 3em 1fr;
+	grid-column-gap: 10px;
+	align-items: center;
+}
+
+.pax > span{
+	color: #ffffff;
+}

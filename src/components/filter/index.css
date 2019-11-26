@@ -1,0 +1,92 @@
+main-filter {
+	background-color: rgba(255, 165, 0, .8);
+}
+main-filter > div {
+	height: 70px;
+	display: grid;
+	grid-template-columns: 1fr .5fr 1fr;
+	width: 70%;
+	margin: auto;
+	position: relative;
+}
+
+.depart-type {
+	color: #fff;
+	cursor: pointer;
+	user-select: none;
+	display: grid;
+	grid-template-columns: 1em 1fr;
+	grid-column-gap: 10px;
+}
+
+.depart-type > * {
+	place-self: center;
+}
+
+.depart-menu {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	color: rgba(0,0,0,0.65);
+	font-size: 14px;
+	line-height: 1.5;
+	list-style: none;
+	position: absolute;
+	z-index: 1050;
+	display: block;
+	margin: 45px 0 0 20px;
+	padding: 4px 0;
+	text-align: left;
+	list-style-type: none;
+	background-color: #fff;
+	background-clip: padding-box;
+	border-radius: 4px;
+	outline: none;
+	-webkit-box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+	box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+	-webkit-transform: translate3d(0, 0, 0);
+}
+
+.depart-menu::before {
+	position: absolute;
+	top: -7px;
+	right: 0;
+	bottom: -7px;
+	left: -7px;
+	z-index: -9999;
+	opacity: .0001;
+	content: ' ';
+}
+
+.menu-item {
+	display: block;
+	padding: 5px 12px;
+	color: var(--default-color);
+	-webkit-transition: all .3s;
+	transition: all .3s;
+	user-select: none;
+	cursor: pointer;
+}
+
+main-filter > div > * {
+	place-self: center;
+}
+
+
+.departs {
+	display: grid;
+	grid-auto-flow: column;
+	grid-column-gap: 10px;
+}
+
+.departs > select {
+	margin-left: 10px;
+	background-color: #fff;
+	padding: 5px;
+	color: #666;
+	border-radius: 3px;
+}
+
+.hide {
+	display: none;
+}

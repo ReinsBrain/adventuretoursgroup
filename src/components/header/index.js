@@ -2,10 +2,10 @@ import { MetaComponent } from '@rebelstack-io/metaflux';
 import './index.css';
 class Header extends MetaComponent {
 	/**
-	 * MetaComponent constructor needs storage.
+	 * MetaComponent constructor
 	 */
 	constructor () {
-		super(global.storage);
+		super();
 	}
 	// eslint-disable-next-line class-method-use-this
 	render () {
@@ -26,14 +26,6 @@ class Header extends MetaComponent {
 		`
 	}
 
-	/**
-	 * Handle Events in a organized way.
-	 */
-	handleStoreEvents () {
-		return {
-			
-		};
-	}
 }
 
 window.customElements.define('atg-header', Header);

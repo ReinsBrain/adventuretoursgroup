@@ -121,3 +121,13 @@ main-header > div {
 	padding-right: 10px;
 	cursor: pointer;
 }
+
+#container {
+	display: grid;
+	overflow-x: hidden;
+}
+
+.metapackage {
+	height: 90vh;
+	background-color: ghostwhite;
+}

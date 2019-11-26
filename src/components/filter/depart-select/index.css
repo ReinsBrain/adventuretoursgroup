@@ -1,0 +1,94 @@
+#options {
+	position: absolute;
+	top: 42px;
+	right: 0;
+	left: 0;
+	width: 298px;
+	margin: 0 auto;
+	background-color: #fff;
+	border-radius: 4px;
+	opacity: 0;
+	visibility: hidden;
+	transition: all .5s ease-in-out;
+	z-index: 2;
+}
+
+.select-box {
+	position: relative;
+}
+
+div#options > * {
+	cursor: pointer;
+	user-select: none;
+	padding: 5px 1em;
+	display: grid;
+	grid-template-columns: 1fr 1em;
+	transition: all .3s ease-in-out;
+	color: #666666;
+}
+
+div#options > *:hover {
+	background-color: #f48024;
+	color: #fff;
+}
+
+#select-button {
+	position: relative;
+	height: 16px;
+	padding: 12px 14px;
+	background-color: #fff;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+#options-view-button {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	opacity: 0;
+	cursor: pointer;
+	z-index: 3;
+}
+
+#selected-value {
+	font-size: 16px;
+	line-height: 1;
+	margin-right: 26px;
+}
+
+#chevrons
+{
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	width: 12px;
+	padding: 9px 14px;
+}
+
+#chevrons i
+{
+	display: block;
+	height: 50%;
+	color: #d1dede;
+	font-size: 12px;
+	text-align: right;
+}
+
+#options-view-button:checked + #select-button #chevrons i
+{
+	color: #2d3667;
+}
+
+#options-view-button:checked ~ #options
+{
+	border: 1px solid #e2eded;
+	border-color: #eaf1f1 #e4eded #dbe7e7 #e4eded;
+	opacity: 1;
+	visibility: visible;
+}
