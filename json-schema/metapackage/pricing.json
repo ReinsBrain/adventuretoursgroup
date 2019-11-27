@@ -1,0 +1,53 @@
+{
+		"definitions": {},
+		"$schema": "http://json-schema.org/draft-07/schema#",
+		"$id": "#/pricing",
+		"type": "array",
+		"title": "Pricing Schema",
+		"items": {
+			"$id": "#/items",
+			"type": "object",
+			"title": "Pricing Object",
+			"required": [
+				"scheds",
+				"max",
+				"min",
+				"function"
+			],
+			"properties": {
+				"scheds": {
+					"$id": "#/items/properties/scheds",
+					"type": "array",
+					"title": "array of schedule frequency formats (double precision)"
+				},
+				"max": {
+					"$id": "#/items/properties/max",
+					"type": "number",
+					"title": "double precision",
+					"default": 0,
+					"examples": [
+						0
+					]
+				},
+				"min": {
+					"$id": "#/items/properties/min",
+					"type": "number",
+					"title": "double precision",
+					"default": 0,
+					"examples": [
+						0
+					]
+				},
+				"function": {
+					"$id": "#/items/properties/function",
+					"type": "string",
+					"title": "Function String",
+					"default": "",
+					"examples": [
+						""
+					],
+					"pattern": "^(.*)$"
+				}
+			}
+		}
+	}

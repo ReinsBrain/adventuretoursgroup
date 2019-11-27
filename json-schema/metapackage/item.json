@@ -1,0 +1,146 @@
+{
+	"definitions": {},
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$id": "#/options",
+	"type": "object",
+	"title": "Item schema",
+	"required": [
+	  "title",
+	  "icon",
+	  "description",
+	  "tags",
+	  "key",
+	  "current",
+	  "summ",
+	  "mod",
+	  "modby",
+	  "cre",
+	  "creby",
+	  "pricing"
+	],
+	"properties": {
+	  "title": {
+		"$id": "#/properties/title",
+		"type": "string",
+		"title": "Title",
+		"default": "",
+		"examples": [
+		  "item-title"
+		],
+		"pattern": "^(.*)$"
+	  },
+	  "icon": {
+		"$id": "#/properties/icon",
+		"type": "string",
+		"title": "Icon Url",
+		"default": "",
+		"examples": [
+		  "/${cloudinary-id}/image/upload/${version}/${file-name}.${ext}"
+		],
+		"pattern": "^(.*)$"
+	  },
+	  "description": {
+		"$id": "#/properties/description",
+		"type": "string",
+		"title": "Description",
+		"default": "",
+		"examples": [
+		  "item-description"
+		],
+		"pattern": "^(.*)$"
+	  },
+	  "tags": {
+		"$id": "#/properties/tags",
+		"type": "array",
+		"title": "Tags Schema",
+		"items": {
+		  "$id": "#/properties/tags/items",
+		  "type": "string",
+		  "title": "tag string",
+		  "default": "",
+		  "examples": [
+			"tag0",
+			"tag1"
+		  ],
+		  "pattern": "^(.*)$"
+		}
+	  },
+	  "key": {
+		"$id": "#/properties/key",
+		"type": "string",
+		"title": "Key String",
+		"default": "",
+		"examples": [
+		  ""
+		],
+		"pattern": "^(.*)$"
+	  },
+	  "current": {
+		"$id": "#/properties/current",
+		"type": "number",
+		"title": "Current",
+		"default": 0,
+		"examples": [
+		  0
+		]
+	  },
+	  "summ": {
+		"$id": "#/properties/summ",
+		"type": "string",
+		"title": "Summ",
+		"default": "",
+		"examples": [
+		  ""
+		],
+		"pattern": "^(.*)$"
+	  },
+	  "mod": {
+		"$id": "#/properties/mod",
+		"type": "number",
+		"title": "Mod",
+		"default": 0,
+		"examples": [
+		  0
+		]
+	  },
+	  "modby": {
+		"$id": "#/properties/modby",
+		"type": "string",
+		"title": "JWT",
+		"default": "",
+		"examples": [
+		  "jwt-token"
+		],
+		"pattern": "^(.*)$"
+	  },
+	  "cre": {
+		"$id": "#/properties/cre",
+		"type": "number",
+		"title": "Cre",
+		"default": 0,
+		"examples": [
+		  0
+		]
+	  },
+		"creby": {
+			"$id": "#/properties/creby",
+			"type": "string",
+			"title": "JWT",
+			"default": "",
+			"examples": [
+			"jwt-token"
+			],
+			"pattern": "^(.*)$"
+		},
+		"pricing": {
+			"$id": "#/properties/pricing",
+			"type": "array",
+			"title": "Pricing Schema"
+		},
+		"options": {
+			"$id": "#/properties/options",
+			"type": "array",
+			"title": "Options Schema"
+		}
+	}
+}

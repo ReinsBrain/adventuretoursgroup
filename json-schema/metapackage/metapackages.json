@@ -1,0 +1,214 @@
+{
+	"definitions": {},
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$id": "#/metapackage",
+	"type": "object",
+	"title": "MetaPackage schema",
+	"required": [
+	  "key",
+	  "current",
+	  "summ",
+	  "desc",
+	  "mod",
+	  "modby",
+	  "cre",
+	  "creby",
+	  "pricing",
+	  "name",
+	  "display_price",
+	  "depart_time",
+	  "multimedia",
+	  "items"
+	],
+	"properties": {
+	  "key": {
+		"$id": "#/properties/key",
+		"type": "string",
+		"title": "key string",
+		"default": "",
+		"examples": [
+		  ""
+		],
+		"pattern": "^(.*)$"
+	  },
+	  "current": {
+		"$id": "#/properties/current",
+		"type": "number",
+		"title": "double precision seconds Unix Epoch - current version",
+		"default": 0,
+		"examples": [
+		  0.0
+		]
+	  },
+	  "summ": {
+		"$id": "#/properties/summ",
+		"type": "string",
+		"title": "string max 256 chars",
+		"default": "",
+		"examples": [
+		  ""
+		],
+		"pattern": "^(.*)$"
+	  },
+	  "desc": {
+		"$id": "#/properties/desc",
+		"type": "string",
+		"title": "Description",
+		"default": "",
+		"examples": [
+		  ""
+		],
+		"pattern": "^(.*)$"
+	  },
+	  "mod": {
+		"$id": "#/properties/mod",
+		"type": "number",
+		"title": "double precision seconds Unix Epoch",
+		"default": 0,
+		"examples": [
+		  0
+		]
+	  },
+	  "modby": {
+		"$id": "#/properties/modby",
+		"type": "string",
+		"title": "Modby",
+		"default": "",
+		"examples": [
+		  ""
+		],
+		"pattern": "^(.*)$"
+	  },
+	  "cre": {
+		"$id": "#/properties/cre",
+		"type": "number",
+		"title": "double precision seconds Unix Epoch",
+		"default": 0,
+		"examples": [
+		  0
+		]
+	  },
+	  "creby": {
+		"$id": "#/properties/creby",
+		"type": "string",
+		"title": "Creby",
+		"default": "",
+		"examples": [
+		  ""
+		],
+		"pattern": "^(.*)$"
+	  },
+	  "pricing": {
+		"$id": "#/properties/pricing",
+		"type": "array",
+		"title": "Pricing Schema",
+		"items": {
+		  "$id": "#/properties/pricing/items",
+		  "type": "object",
+		  "title": "Pricing Object",
+		  "required": [
+			"scheds",
+			"max",
+			"min",
+			"function"
+		  ],
+		  "properties": {
+			"scheds": {
+			  "$id": "#/properties/pricing/items/properties/scheds",
+			  "type": "array",
+			  "title": "array of schedule frequency formats (double precision)"
+			},
+			"max": {
+			  "$id": "#/properties/pricing/items/properties/max",
+			  "type": "number",
+			  "title": "double precision",
+			  "default": 0,
+			  "examples": [
+				0
+			  ]
+			},
+			"min": {
+			  "$id": "#/properties/pricing/items/properties/min",
+			  "type": "number",
+			  "title": "double precision",
+			  "default": 0,
+			  "examples": [
+				0
+			  ]
+			},
+			"function": {
+			  "$id": "#/properties/pricing/items/properties/function",
+			  "type": "string",
+			  "title": "string function",
+			  "default": "",
+			  "examples": [
+				""
+			  ],
+			  "pattern": "^(.*)$"
+			}
+		  }
+		}
+	  },
+	  "name": {
+		"$id": "#/properties/name",
+		"type": "string",
+		"title": "Metapackage name",
+		"default": "",
+		"examples": [
+		  "Metapackage-name"
+		],
+		"pattern": "^(.*)$"
+	  },
+	  "depart_time": {
+		"$id": "#/properties/depart_time",
+		"type": "string",
+		"title": "Depart time Schema",
+		"default": "",
+		"examples": [
+		  "02/27/2020-02/28/2020"
+		],
+		"pattern": "^(.*)$"
+	  },
+	  "multimedia": {
+		"$id": "#/properties/multimedia",
+		"type": "array",
+		"title": "Multimedia Schema",
+		"items": {
+		  "$id": "#/properties/multimedia/items",
+		  "type": "object",
+		  "title": "Multimedia object",
+		  "required": [
+			"type",
+			"url"
+		  ],
+		  "properties": {
+			"type": {
+			  "$id": "#/properties/multimedia/items/properties/type",
+			  "type": "string",
+			  "title": "Type of file",
+			  "default": "",
+			  "examples": [
+				"img","vid"
+			  ],
+			  "pattern": "^(.*)$"
+			},
+			"url": {
+			  "$id": "#/properties/multimedia/items/properties/url",
+			  "type": "string",
+			  "title": "Url of the file",
+			  "default": "",
+			  "examples": [
+				"/${cloudinary-id}/image/upload/${version}/${file-name}.${ext}"
+			  ],
+			  "pattern": "^(.*)$"
+			}
+		  }
+		}
+	  },
+	  "items": {
+		"$id": "#/properties/items",
+		"type": "array",
+		"title": "Item Schema"
+	}
+	}
+}
