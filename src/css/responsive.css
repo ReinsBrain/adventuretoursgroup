@@ -19,4 +19,9 @@
 		place-self: end !important;
 		padding-right: 10px;
 	}
+	.meta-body { 
+		grid-template-columns: 1fr !important;
+		grid-template-rows: 594px 594px 594px;
+		overflow-y: auto !important;
+	}
 }

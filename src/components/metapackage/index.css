@@ -1,6 +1,5 @@
 .meta-body {
     height: 100vh;
-    
     padding-top: 59px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -58,4 +57,27 @@
 .meta-background > * {
     place-self: end;
     margin: 0px 5px 5px 0;
+}
+
+.meta-items {
+    position: absolute;
+    bottom: 0;
+    top: 217px;
+    right: 0;
+    left: 0;
+    overflow-y: auto;
+}
+
+.meta-item > pretty-tag span {
+    display: none;
+}
+
+.meta-item > pretty-tag {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.meta-item {
+    position: relative;
 }
