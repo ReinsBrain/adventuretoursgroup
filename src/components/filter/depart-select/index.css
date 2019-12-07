@@ -71,7 +71,7 @@ div#options > *:hover {
 	padding: 9px 14px;
 }
 
-#chevrons i
+#chevrons svg
 {
 	display: block;
 	height: 50%;
@@ -80,7 +80,7 @@ div#options > *:hover {
 	text-align: right;
 }
 
-#options-view-button:checked + #select-button #chevrons i
+#options-view-button:checked + #select-button #chevrons svg
 {
 	color: #2d3667;
 }

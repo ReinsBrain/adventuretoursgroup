@@ -2,9 +2,9 @@
 .tags {
 	position: absolute;
 	bottom: -63px;
-	background: var(--lightgray);
+	background: rgba(255,255,255,.5);
 	padding: 1em 0;
-	box-shadow: inset 1px -5px 9px 2px #444040;
+	/* box-shadow: inset 1px -5px 9px 2px #444040; */
 	box-sizing: border-box;
 }
 
@@ -31,7 +31,10 @@ pretty-tag span {
 .category-box > span {
 	font-style: italic;
 	margin: 0 6px;
-	color: rgba(255, 165, 0, .8);
+	color: rgba(255, 165, 0, 1);
+	padding-left: 5px;
+	cursor: default;
+	user-select: none;
 }
 
 pretty-tag > div {

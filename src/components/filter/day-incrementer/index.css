@@ -36,7 +36,7 @@
 	user-select: none;
 }
 
-.depart-date i {
+.depart-date svg {
 	justify-self: center;
 	width: -webkit-fill-available;
 	text-align: center;
@@ -44,7 +44,7 @@
 	transition: all .5s ease;
 }
 
-.depart-date i:hover {
+.depart-date svg:hover {
 	color: #40a9ff;
 	transform: scale(1.3);
 }
@@ -52,7 +52,7 @@
 	justify-self: center;
 }
 
-.depart-date > i {
+.depart-date > svg {
 	justify-self: center;
 	color: #fff;
 }

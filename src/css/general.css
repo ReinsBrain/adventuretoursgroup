@@ -26,6 +26,9 @@ body, html {
 	--anchor-color: #407afc;
 	--packages-title-bg: rgba(125, 59, 136, .5);
 	--packages-bg: #0252af;
+	/*pretty component override*/
+	--danger-bg: rgba(255, 165, 0, .8);
+	--danger-bg-hv: rgba(255, 165, 0, 1);
 }
 
 .stars {
@@ -124,7 +127,7 @@ main-header > div {
 
 #container {
 	display: grid;
-	overflow-x: hidden;
+	overflow: hidden;
 }
 
 .metapackage {

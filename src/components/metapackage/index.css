@@ -1,0 +1,61 @@
+.meta-body {
+    height: 100vh;
+    
+    padding-top: 59px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background: rgba(25, 90, 81, 1);
+}
+
+.meta-column {
+    margin: 10px;
+    position: relative;
+    box-sizing: border-box;
+    border-radius: 4px;
+    background-color: rgba(255,255,255, 1);
+    overflow: hidden;
+}
+
+.meta-column > h3 {
+    color: #fff;
+    z-index: 2;
+    position: relative;
+    width: 50%;
+    padding: 5px;
+    background-color: rgba(0,0,0,.5);
+}
+
+.meta-amount {
+    position: absolute;
+    top: 0;
+    right: 0px;
+    background-color: rgba(255, 165, 0, .8);
+    color: #fff;
+    padding: 5px;
+    display: grid;
+    grid-template-columns: 1fr .3fr 1fr;
+    z-index: 2;
+}
+
+.meta-amount > span {
+    text-align: right;
+     grid-area: 1 / 1 / span 1/ span 3;
+}
+
+.meta-amount > svg {
+    place-self: center;
+}
+
+.meta-background {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 217px;
+    display: grid;
+}
+
+.meta-background > * {
+    place-self: end;
+    margin: 0px 5px 5px 0;
+}
